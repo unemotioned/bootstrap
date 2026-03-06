@@ -1,8 +1,8 @@
-# Arch Linux Hyprland
+# Bootstrap
 
-Scripts to install packages and stow my dotfiles
+Scripts to install packages and stow my dotfiles.
 
----
+My workflow: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
 ## Table of Contents
 
@@ -16,8 +16,8 @@ Scripts to install packages and stow my dotfiles
 
 ## Scripting
 
-- `command -v {pkg}`: look up package in $PATH and return if found
-- `&>/dev/null`: suppress stdout, stderr to print no output
+- `command -v <pkg>`: look up package in $PATH and return its path if found
+- `&>/dev/null`: redirect stdout and stderr to /dev/null
 
 ---
 
@@ -27,7 +27,7 @@ Scripts to install packages and stow my dotfiles
 
 ### Pacman
 
-Packages those can be installed with `pacman`
+Packages that can be installed with `pacman`
 
 - base-devel
 - bat
@@ -46,6 +46,7 @@ Packages those can be installed with `pacman`
 - jdk17-openjdk
 - lazygit
 - libinput-tools
+- linux-firmware
 - lsof
 - man-db
 - man-pages
@@ -55,14 +56,17 @@ Packages those can be installed with `pacman`
 - noto-fonts-cjk
 - noto-fonts-emoji
 - npm
-- oft-font-awesome
+- otf-font-awesome
 - pavucontrol
 - pipewire-audio
+- reflector
 - rustup
 - sof-firmware
 - stow
 - tmux
 - ttf-iosevka-nerd
+- ttf-jetbrains-mono-nerd
+- ttf-meslo-nerd
 - unzip
 - waybar
 - yarn
@@ -74,7 +78,7 @@ Packages those can be installed with `pacman`
 
 ### AUR
 
-Packages those can only be installed with `AUR`
+Packages that can only be installed via the AUR
 
 - oh-my-zsh
 - overskride
