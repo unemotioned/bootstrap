@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 # Create Repository directory if it doesn't exist
 mkdir -p ~/Repository
@@ -16,3 +16,5 @@ if ! command -v yay &>/dev/null; then
   cd ~/Repository/yay
   makepkg -si --noconfirm
 fi
+
+cd ~
