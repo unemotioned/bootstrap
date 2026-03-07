@@ -4,6 +4,10 @@ Scripts to install packages and stow my dotfiles.
 
 My workflow: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
+## Reference
+
+- [You installed Omarchy, Now What? - typecraft](https://www.youtube.com/watch?v=d23jFJmcaMI)
+
 ## Table of Contents
 
 - [Scripting](#scripting)
