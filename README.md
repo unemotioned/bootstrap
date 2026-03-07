@@ -10,18 +10,47 @@ My workflow: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
 ## Table of Contents
 
-- [Scripting](#scripting)
+- [Prerequisite](#prerequisite)
+- [Usage](#usage)
 - [Packages](#packages)
   - [Pacman](#pacman)
   - [AUR](#aur)
   - [Manual](#manual)
+- [Scripting](#scripting)
 
 ---
 
-## Scripting
+## Prerequisite
 
-- `command -v <pkg>`: look up package in $PATH and return its path if found
-- `&>/dev/null`: redirect stdout and stderr to /dev/null
+Manually install the following package
+
+- `git`: For cloning this repository
+
+```sh
+sudo pacman -Syu git
+```
+
+---
+
+## Usage
+
+1. clone this repository
+
+```sh
+git clone https://github.com/UnEmotioneD/bootstrap.git
+```
+
+2. move in
+
+```sh
+cd ~/bootstrap
+```
+
+3. execute `master.sh` script
+
+```sh
+./master.sh
+```
 
 ---
 
@@ -71,7 +100,6 @@ Packages that can be installed with `pacman`
 - tmux
 - ttf-iosevka-nerd
 - ttf-jetbrains-mono-nerd
-- ttf-meslo-nerd
 - unzip
 - waybar
 - yarn
@@ -83,7 +111,7 @@ Packages that can be installed with `pacman`
 
 ### AUR
 
-Packages that can only be installed via the AUR
+Packages that can only be installed from `AUR` repository
 
 - oh-my-zsh
 - overskride
@@ -100,3 +128,10 @@ Packages that can only be installed via the AUR
 - brillo
 - tpm
 - yay
+
+---
+
+## Scripting
+
+- `command -v <pkg>`: look up package in $PATH and return it if found
+- `&>/dev/null`: redirect stdout and stderr to /dev/null (print no output)
