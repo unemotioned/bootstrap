@@ -59,6 +59,7 @@ Packages that can be installed with `pacman`
 - bat
 - bluez
 - bolt
+- discord
 - eza
 - foot
 - fzf
@@ -113,7 +114,7 @@ Packages that can only be installed from `AUR` repository
 - overskride
 - pfetch-rs
 - powerlevel10k
-- vscodium
+- vscodium-bin
 - wlclipboard
 - wlogout
 - xremap-wlroots-bin
