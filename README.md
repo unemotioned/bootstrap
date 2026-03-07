@@ -131,3 +131,13 @@ Packages that can only be installed from `AUR` repository
 
 - `command -v <pkg>`: look up package in $PATH and return it if found
 - `&>/dev/null`: redirect stdout and stderr to /dev/null (print no output)
+- `exit 0 ~ 255`: any none-zero value signals an error
+
+  | Code  | Meaning                       |
+  | ----- | ----------------------------- |
+  | `0`   | Success                       |
+  | `1`   | General error                 |
+  | `2`   | Misues of shell builtins      |
+  | `126` | Cmd found but not executable  |
+  | `127` | Cmd not found                 |
+  | `130` | Script terminated by `Ctrl+C` |
