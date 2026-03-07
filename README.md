@@ -99,7 +99,3 @@ Packages that can only be installed via the AUR
 - brillo
 - tpm
 - yay
-
----
-
-#### Happy Scripting 🎉
