@@ -13,13 +13,19 @@ fi
 
 cd ~/dotfiles
 
+if [ -d ~/.config/kitty ]; then
+  rm -rf ~/.config/kitty
+fi
+
+mkdir -p ~/.local/share/applications
+
 stow bat
 stow foot
 stow hypr
 stow icon
 stow kitty
 stow lazygit
-stow link-wofi
+stow --adopt link-wofi
 stow nvim
 stow sessionizer
 stow tmux
