@@ -41,6 +41,7 @@ Packages that can be installed with `pacman`
 - foot
 - fzf
 - git
+- git-delta
 - go-md2man
 - hypridle
 - hyprlock
@@ -86,9 +87,9 @@ Packages that can only be installed via the AUR
 
 - oh-my-zsh
 - overskride
-- pfetch
+- pfetch-rs
 - powerlevel10k
-- visual-studio-code-bin
+- vscodium
 - wlclipboard
 - wlogout
 - xremap-wlroots-bin
