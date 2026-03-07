@@ -35,20 +35,12 @@ sudo pacman -Syu git
 ## Usage
 
 1. clone this repository
-
-```sh
-git clone https://github.com/UnEmotioneD/bootstrap.git
-```
-
 2. move in
-
-```sh
-cd ~/bootstrap
-```
-
 3. execute `master.sh` script
 
 ```sh
+git clone https://github.com/UnEmotioneD/bootstrap.git
+cd ~/bootstrap
 ./master.sh
 ```
 
@@ -57,6 +49,7 @@ cd ~/bootstrap
 ## Packages
 
 - `--noconfirm`: skip confirmation prompts
+- `--needed`: skip if already up-to-date
 
 ### Pacman
 
@@ -91,6 +84,7 @@ Packages that can be installed with `pacman`
 - noto-fonts-emoji
 - npm
 - otf-font-awesome
+- pacman-contrib
 - pavucontrol
 - pipewire-audio
 - reflector
@@ -103,7 +97,7 @@ Packages that can be installed with `pacman`
 - unzip
 - waybar
 - yarn
-- yazi
+- yazi(dependencies: ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
 - zoxide
 - zsh
 - zsh-autosuggestions
@@ -113,6 +107,8 @@ Packages that can be installed with `pacman`
 
 Packages that can only be installed from `AUR` repository
 
+- adobe-source-han-sans-kr-fonts
+- adobe-source-han-serif-kr-fonts
 - oh-my-zsh
 - overskride
 - pfetch-rs
