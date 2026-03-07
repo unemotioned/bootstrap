@@ -10,6 +10,8 @@ set -euo pipefail
 . ./bin/install-zsh.sh
 . ./bin/change-shell.sh
 
+. ./bin/install-tmux.sh
+
 . ./bin/install-stow.sh
 . ./bin/clone-dotfiles.sh
 
