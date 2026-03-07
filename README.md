@@ -141,3 +141,12 @@ Packages that can only be installed from `AUR` repository
   | `126` | Cmd found but not executable  |
   | `127` | Cmd not found                 |
   | `130` | Script terminated by `Ctrl+C` |
+
+- `set -euo pipefail`: safer script execution
+
+  | Flag       | Meaning                                     |
+  | ---------- | ------------------------------------------- |
+  | `-e`       | Exit immediately if a command fails         |
+  | `-u`       | Treat unset variables as errors             |
+  | `-o`       | Set a named option                          |
+  | `pipefail` | Pipe fails if any command in the pipe fails |
