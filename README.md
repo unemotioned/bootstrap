@@ -135,6 +135,8 @@ Packages that can only be installed from `AUR` repository
 
 ## Scripting
 
+[bash cheat sheet](https://devhints.io/bash)
+
 - `command -v <pkg>`: look up package in $PATH and return it if found
 - `&>/dev/null`: redirect stdout and stderr to /dev/null (print no output)
 - `exit 0 ~ 255`: any none-zero value signals an error
