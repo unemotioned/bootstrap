@@ -37,4 +37,6 @@ stow xremap
 stow yazi
 stow zsh-arch
 
+bat cache --build
+
 cd ~
