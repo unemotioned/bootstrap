@@ -120,7 +120,7 @@ Packages that can only be installed from `AUR` repository
 - pfetch-rs
 - powerlevel10k
 - vscodium-bin
-- wlclipboard
+- wl-clipboard
 - wlogout
 - xremap-wlroots-bin
 - zsh-fast-syntax-highlighting

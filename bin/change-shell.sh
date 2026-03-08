@@ -3,8 +3,7 @@
 set -euo pipefail
 
 if ! command -v zsh &>/dev/null; then
-  echo 'ZSH is not installed.'
-  exit 1
+  yay -S --noconfirm zsh
 fi
 
 ZSH_PATH=$(which zsh)

@@ -6,9 +6,15 @@ set -euo pipefail
 
 . ./bin/sort-mirror-list.sh
 
+. ./bin/paccache.sh
+
+. ./bin/install-brillo.sh
+
 . ./bin/change-shell.sh
 
 . ./bin/install-tmux.sh
+
+. ./bin/install-nvim.sh
 
 . ./bin/remove-orphaned.sh
 
