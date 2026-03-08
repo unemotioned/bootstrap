@@ -122,7 +122,7 @@ Packages that can only be installed from `AUR` repository
 - vscodium-bin
 - wl-clipboard
 - wlogout
-- xremap-wlroots-bin
+- xremap-hypr-bin
 - zsh-fast-syntax-highlighting
 
 ### Manual
