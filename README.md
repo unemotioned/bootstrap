@@ -61,6 +61,7 @@ Packages that can be installed with `pacman`
 - bolt
 - discord
 - eza
+- firefox
 - foot
 - fzf
 - git
