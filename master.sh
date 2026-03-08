@@ -19,3 +19,5 @@ set -euo pipefail
 . ./bin/remove-orphaned.sh
 
 . ./bin/clone-dotfiles.sh
+
+. ./bin/install-fonts.sh
