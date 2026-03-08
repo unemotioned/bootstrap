@@ -61,6 +61,9 @@ Packages that can be installed with `pacman`
 - bolt
 - discord
 - eza
+- fcitx5-configtool
+- fcitx5-hangul
+- fcitx5-im
 - firefox
 - foot
 - fzf
