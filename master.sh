@@ -25,7 +25,7 @@ set -euo pipefail
 
 . ./bin/install-firefox.sh
 . ./bin/install-discord.sh
-. ./bin/instlal-vscodium.sh
+. ./bin/install-vscodium.sh
 . ./bin/install-foot.sh
 
 . ./bin/remove-orphaned.sh

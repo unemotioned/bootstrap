@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-yay -S --noconfirm --needed firefox
+yay -S --noconfirm --needed discord
