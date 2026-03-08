@@ -110,6 +110,7 @@ Packages that can only be installed from `AUR` repository
 
 - adobe-source-han-sans-kr-fonts
 - adobe-source-han-serif-kr-fonts
+- cliphist
 - oh-my-zsh
 - overskride
 - pfetch-rs
