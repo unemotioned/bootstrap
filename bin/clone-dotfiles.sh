@@ -31,7 +31,7 @@ stow sessionizer
 stow tmux
 stow wallpaper
 stow waybar
-stow wlogouit
+stow wlogout
 stow wofi
 stow xremap
 stow yazi
