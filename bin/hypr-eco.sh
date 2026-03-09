@@ -10,10 +10,10 @@ sudo pacman -S --noconfirm --needed\
   hyprpaper\
   hyprpicker\
   hyprshot\
+  satty\
   waybar\
+  wl-clipboard\
   wlogout\
-  satty
 
 yay -S --noconfirm --needed\
-  cliphist\
-  wl-clipboard
+  cliphist
