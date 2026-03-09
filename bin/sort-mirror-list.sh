@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi reflector &>/dev/null; then
-  yay -S --noconfirm reflector
+  sudo pacman -S --noconfirm reflector
 fi
 
 # sort 10 fastest servers

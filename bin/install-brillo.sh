@@ -7,7 +7,7 @@ if pacman -Qi brillo &>/dev/null; then
 fi
 
 if ! pacman -Qi go-md2man &>/dev/null; then
-  yay -S --noconfirm go-md2man
+  sudo pacman -S --noconfirm go-md2man
 fi
 
 REPO='repo'

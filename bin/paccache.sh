@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi pacman-contrib &>/dev/null; then
-  yay -S --noconfirm pacman-contrib
+  sudo pacman -S --noconfirm pacman-contrib
 fi
 
 if ! pacman -Qi pacman-contrib &>/dev/null; then

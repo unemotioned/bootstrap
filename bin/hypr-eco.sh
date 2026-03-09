@@ -11,8 +11,8 @@ sudo pacman -S --noconfirm --needed\
   hyprshot\
   satty\
   waybar\
-  wl-clipboard\
-  wlogout\
+  wl-clipboard
 
 yay -S --noconfirm --needed\
-  cliphist
+  cliphist\
+  wlogout

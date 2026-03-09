@@ -2,10 +2,10 @@
 set -euo pipefail
 
 if ! pacman -Qi nvim &>/dev/null; then
-  yay -S --noconfirm neovim
+  sudo pacman -S --noconfirm neovim
 fi
 
-yay -S --noconfirm --needed\
+sudo pamcan -S --noconfirm --needed\
   noto-fonts-emoji\
   wl-clipboard\
   base-devel\
