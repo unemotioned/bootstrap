@@ -12,6 +12,8 @@ set -euo pipefail
 
 . ./bin/term-env.sh
 
+. ./bin/install-yazi.sh
+
 . ./bin/install-tmux.sh
 
 . ./bin/install-nvim.sh
