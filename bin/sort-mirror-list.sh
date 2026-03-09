@@ -10,4 +10,4 @@ fi
 sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 # update pacman
-sudo pacman -Sy
+sudo pacman -Syu
