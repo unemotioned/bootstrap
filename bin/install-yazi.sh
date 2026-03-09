@@ -2,7 +2,9 @@
 
 set -euo pipefail
 
-sudo pacman -S --needed yazi
+if ! command -v yazi &>/dev/null;then
+  sudo pacman -S --noconfirm yazi
+fi
 
 sudo pacman -S --noconfirm --needed\
   7zip\
