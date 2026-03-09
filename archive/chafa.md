@@ -14,7 +14,7 @@ fi
 
 ## Get Relative PATH
 
-Get path where the script is executed
+Get path where the script is located
 
 ```sh
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
