@@ -105,6 +105,7 @@ Packages that can be installed with `pacman`
 - [ ] ttf-jetbrains-mono-nerd
 - [ ] unzip
 - [ ] waybar
+- [ ] wl-clipboard
 - [ ] yarn
 - [ ] yazi(dependencies: ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
 - [ ] zoxide
@@ -124,7 +125,6 @@ Packages that can only be installed from `AUR` repository
 - [ ] pfetch-rs-bin
 - [ ] powerlevel10k
 - [ ] vscodium-bin
-- [ ] wl-clipboard
 - [ ] wlogout
 - [ ] xremap-hypr-bin
 - [ ] zsh-fast-syntax-highlighting
