@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
 if ! pacman -Qi zsh &>/dev/null; then

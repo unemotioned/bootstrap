@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
 if ! grep -q '^GRUB_DEFAULT=saved' /etc/default/grub; then

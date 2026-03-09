@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-set -e
+set -euo pipefail
 
 read -rp 'Reboot now? [y/N] ' answer
 
