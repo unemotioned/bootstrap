@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if ! command -v nvim &>/dev/null; then
+if ! pacman -Qi nvim &>/dev/null; then
   yay -S --noconfirm neovim
 fi
 

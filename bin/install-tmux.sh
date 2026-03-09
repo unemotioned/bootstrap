@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if ! command -v tmux &>/dev/null; then
+if ! pacman -Qi tmux &>/dev/null; then
   sudo pacman -S --noconfirm tmux
 fi
 

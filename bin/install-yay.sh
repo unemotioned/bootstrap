@@ -14,7 +14,7 @@ if [ ! -d ~/"$REPO"/yay ]; then
 fi
 
 # Build and install yay if not already installed
-if ! command -v yay &>/dev/null; then
+if ! pacman -Qi yay &>/dev/null; then
   cd ~/"$REPO"/yay
   makepkg -si --noconfirm
 fi

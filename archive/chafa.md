@@ -7,7 +7,7 @@ Terminal image rendering tool
 ## Install
 
 ```sh
-if ! command -v chafa &/dev/null;then
+if ! pacman -Qi chafa &/dev/null;then
   sudo paman -S --noconfirm chafa
 fi
 ```

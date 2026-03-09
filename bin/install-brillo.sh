@@ -2,12 +2,12 @@
 
 set -euo pipefail
 
-if command -v brillo &>/dev/null; then
+if pacman -Qi brillo &>/dev/null; then
   echo 'brillo already installed'
   exit 0
 fi
 
-if ! command -v go-md2man &>/dev/null; then
+if ! pacman -Qi go-md2man &>/dev/null; then
   yay -S --noconfirm go-md2man
 fi
 

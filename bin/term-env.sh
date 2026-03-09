@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if ! command -v zsh &>/dev/null; then
+if ! pacman -Qi zsh &>/dev/null; then
   yay -S --noconfirm zsh
 fi
 

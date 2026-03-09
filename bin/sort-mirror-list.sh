@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if ! command -v reflector &>/dev/null; then
+if ! pacman -Qi reflector &>/dev/null; then
   yay -S --noconfirm reflector
 fi
 

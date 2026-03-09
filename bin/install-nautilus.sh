@@ -3,7 +3,7 @@
 set -euo pipefail
 
 
-if command -v nautilus &>/dev/null; then
+if pacman -Qi nautilus &>/dev/null; then
   echo 'nautilus already installed'
 else
   sudo pacman -S --noconfirm nautilus

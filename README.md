@@ -143,6 +143,8 @@ Packages that can only be installed from `AUR` repository
 
 - `command -v <pkg>`: look up package in $PATH and return it if found
 
+- `pacman -Qi <pkg>`: check if the package is installed
+
 - `&>/dev/null`: redirect stdout and stderr to /dev/null (print no output)
 
 - `exit 0 ~ 255`: any none-zero value signals an error

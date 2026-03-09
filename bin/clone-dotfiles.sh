@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-if ! command -v stow &>/dev/null; then
+if ! pacman -Qi stow &>/dev/null; then
   echo 'Stow is not installed.'
   exit 1
 fi
