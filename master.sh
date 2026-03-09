@@ -23,5 +23,6 @@ set -euo pipefail
 . ./bin/install-extra.sh
 . ./bin/remove-orphaned.sh
 . ./bin/clone-dotfiles.sh
+# . ./bin/clone-repos.sh
 
 . ./src/prompt-reboot.sh
