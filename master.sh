@@ -47,3 +47,5 @@ REPO="repo"
 . ./bin/remove-orphaned.sh
 
 . ./bin/clone-dotfiles.sh
+
+. ./bin/prompt-reboot.sh
