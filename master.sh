@@ -4,6 +4,8 @@ set -euo pipefail
 
 . ./bin/pacman-config.sh
 
+. ./bin/grub-config.sh
+
 . ./bin/linux-related.sh
 
 . ./bin/install-yay.sh
