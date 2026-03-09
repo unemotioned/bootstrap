@@ -46,4 +46,4 @@ set -euo pipefail
 
 . ./bin/clone-dotfiles.sh
 
-. ./bin/prompt-reboot.sh
+. ./src/prompt-reboot.sh
