@@ -2,18 +2,18 @@
 
 set -euo pipefail
 
-# Create Repository directory if it doesn't exist
-mkdir -p ~/Repository
+# Create repo directory if it doesn't exist
+mkdir -p ~/"$REPO"
 
 # Clone yay AUR helper source if not already present
-if [ ! -d ~/Repository/yay ]; then
-  cd ~/Repository
+if [ ! -d ~/"$REPO"/yay ]; then
+  cd ~/"$REPO"
   git clone https://aur.archlinux.org/yay.git
 fi
 
 # Build and install yay if not already installed
 if ! command -v yay &>/dev/null; then
-  cd ~/Repository/yay
+  cd ~/"$REPO"/yay
   makepkg -si --noconfirm
 fi
 
