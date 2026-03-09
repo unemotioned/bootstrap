@@ -10,12 +10,10 @@ ZSH_PATH=$(which zsh)
 
 if [ "$SHELL" = "$ZSH_PATH" ]; then
   echo 'ZSH is already default shell.'
-  exit 0
+else
+  chsh -S "$ZSH_PATH"
+  echo 'Default shell changed to ZSH. Log out and back in for the change to take effect.'
 fi
-
-chsh -S "$ZSH_PATH"
-
-echo 'Default shell changed to ZSH. Log out and back in for the change to take effect.'
 
 sudo pacman -S --noconfirm --needed\
   bat\
@@ -25,7 +23,7 @@ sudo pacman -S --noconfirm --needed\
   git\
   git-delta\
   lazygit\
-  man-deb\
+  man-db\
   man-pages\
   stow\
   zoxide\
