@@ -2,10 +2,6 @@
 
 set -euo pipefail
 
-REPO="repo"
-# ./bin/install-yay.sh
-# ./bin/install-brillo.sh
-
 . ./bin/pacman-config.sh
 
 . ./bin/linux-related.sh

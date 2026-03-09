@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+REPO='repo'
+
 # Create repo directory if it doesn't exist
 mkdir -p ~/"$REPO"
 
