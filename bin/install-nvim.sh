@@ -3,7 +3,7 @@
 set -euo pipefail
 
 if ! command -v nvim &>/dev/null; then
-  yay -S --noconfirm nvim
+  yay -S --noconfirm neovim
 fi
 
 yay -S --noconfirm --needed\
@@ -11,7 +11,7 @@ yay -S --noconfirm --needed\
   wl-clipboard\
   base-devel\
   unzip\
-  node\
+  nodejs\
   npm\
   pnpm\
   yarn\
