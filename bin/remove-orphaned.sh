@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-orphans=$(yay -Qdtq)
+orphans=$(yay -Qdtq || true)
 if [ -n "$orphans" ]; then
   yay -Rns --noconfirm "$orphans"
 else
