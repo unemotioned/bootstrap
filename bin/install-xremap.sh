@@ -19,11 +19,11 @@ Restart=on-failure
 WantedBy=default.target
 EOF
 
-if pacman -Qi libinput-tools &>/dev/null; then
+if ! pacman -Qi xremap-hypr-bin &>/dev/null; then
   yay -S --noconfirm xremap-hypr-bin
 fi
 
-if pacman -Qi libinput-tools &>/dev/null; then
+if ! pacman -Qi libinput-tools &>/dev/null; then
   sudo pacman -S --noconfirm libinput-tools
 fi
 

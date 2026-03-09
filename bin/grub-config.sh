@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! grep -q '^GRUB_DEFAULT=saved' /etc/default/grub; then
-  sudo sed -i 's/^GRUB_DEFAULT=.*/GRUB_DEFAULT=saved' /etc/default/grub
+  sudo sed -i 's/^GRUB_DEFAULT=.*/GRUB_DEFAULT=saved/' /etc/default/grub
 fi
 
 # TODO: need to know the defaults

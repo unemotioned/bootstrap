@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi nvim &>/dev/null; then
+if ! pacman -Qi neovim &>/dev/null; then
   sudo pacman -S --noconfirm neovim
 fi
 
-sudo pamcan -S --noconfirm --needed\
+sudo pacman -S --noconfirm --needed\
   noto-fonts-emoji\
   wl-clipboard\
   base-devel\

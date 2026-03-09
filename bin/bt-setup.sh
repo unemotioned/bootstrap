@@ -7,4 +7,4 @@ sudo pacman -S --noconfirm --needed\
 
 yay -S --noconfirm --needed overskride
 
-sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service

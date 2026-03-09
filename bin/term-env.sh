@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi zsh &>/dev/null; then
-  yay -S --noconfirm zsh
+  sudo pacman -S --noconfirm zsh
 fi
 
 ZSH_PATH=$(which zsh)

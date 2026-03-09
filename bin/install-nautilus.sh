@@ -8,4 +8,4 @@ else
   sudo pacman -S --noconfirm nautilus
 fi
 
-# TODO: uninstall previous file explrorer
+# TODO: uninstall previous file explorer
