@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+. ./bin/pacman-config.sh
+
+. ./bin/linux-related.sh
+
 . ./bin/install-yay.sh
 
 . ./bin/sort-mirror-list.sh
@@ -9,6 +13,18 @@ set -euo pipefail
 . ./bin/paccache.sh
 
 . ./bin/install-brillo.sh
+
+. ./bin/bt-setup.sh
+
+. ./bin/audio-setup.sh
+
+. ./bin/install-fcitx.sh
+
+. ./bin/install-xremap.sh
+
+. ./bin/hypr-eco.sh
+
+. ./bin/install-lang.sh
 
 . ./bin/term-env.sh
 
@@ -18,8 +34,12 @@ set -euo pipefail
 
 . ./bin/install-nvim.sh
 
+. ./bin/install-fonts.sh
+
+. ./bin/install-nautilus.sh
+
+. ./bin/install-extra.sh
+
 . ./bin/remove-orphaned.sh
 
 . ./bin/clone-dotfiles.sh
-
-. ./bin/install-fonts.sh

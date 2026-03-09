@@ -55,81 +55,85 @@ cd ~/bootstrap
 
 Packages that can be installed with `pacman`
 
-- base-devel
-- bat
-- bluez
-- bolt
-- discord
-- eza
-- fcitx5-configtool
-- fcitx5-hangul
-- fcitx5-im
-- firefox
-- foot
-- fzf
-- git
-- git-delta
-- go-md2man
-- hypridle
-- hyprlock
-- hyprpaper
-- hyprpicker
-- hyprshot
-- jdk17-openjdk
-- lazygit
-- libinput-tools
-- linux-firmware
-- lsof
-- man-db
-- man-pages
-- nautilus
-- neovim
-- node
-- noto-fonts-cjk
-- noto-fonts-emoji
-- npm
-- otf-font-awesome
-- pacman-contrib
-- pavucontrol
-- pipewire-audio
-- reflector
-- rustup
-- sof-firmware
-- stow
-- tmux
-- ttf-iosevka-nerd
-- ttf-jetbrains-mono-nerd
-- unzip
-- waybar
-- yarn
-- yazi(dependencies: ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
-- zoxide
-- zsh
-- zsh-autosuggestions
-- zsh-history-substring-search
+- [ ] base-devel
+- [ ] bat
+- [ ] bluez
+- [ ] bolt
+- [ ] discord
+- [ ] eza
+- [ ] fcitx5-configtool
+- [ ] fcitx5-hangul
+- [ ] fcitx5-im
+- [ ] firefox
+- [ ] foot
+- [ ] fzf
+- [ ] git
+- [ ] git-delta
+- [ ] go-md2man
+- [ ] hypridle
+- [ ] hyprlock
+- [ ] hyprpaper
+- [ ] hyprpicker
+- [ ] hyprshot
+- [ ] jdk17-openjdk
+- [ ] lazygit
+- [ ] libinput-tools
+- [ ] linux-firmware
+- [ ] linux-lts
+- [ ] linux-lts-headers
+- [ ] lsof
+- [ ] man-db
+- [ ] man-pages
+- [ ] nautilus
+- [ ] neovim
+- [ ] node
+- [ ] noto-fonts-cjk
+- [ ] noto-fonts-emoji
+- [ ] npm
+- [ ] otf-font-awesome
+- [ ] pacman-contrib
+- [ ] pavucontrol
+- [ ] pipewire-audio
+- [ ] pnpm
+- [ ] reflector
+- [ ] rustup
+- [ ] satty
+- [ ] sof-firmware
+- [ ] stow
+- [ ] tmux
+- [ ] ttf-iosevka-nerd
+- [ ] ttf-jetbrains-mono-nerd
+- [ ] unzip
+- [ ] waybar
+- [ ] yarn
+- [ ] yazi(dependencies: ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
+- [ ] zoxide
+- [ ] zsh
+- [ ] zsh-autosuggestions
+- [ ] zsh-history-substring-search
 
 ### AUR
 
 Packages that can only be installed from `AUR` repository
 
-- adobe-source-han-sans-kr-fonts
-- adobe-source-han-serif-kr-fonts
-- cliphist
-- oh-my-zsh
-- overskride
-- pfetch-rs
-- powerlevel10k
-- vscodium-bin
-- wl-clipboard
-- wlogout
-- xremap-hypr-bin
-- zsh-fast-syntax-highlighting
+- [ ] adobe-source-han-sans-kr-fonts
+- [ ] adobe-source-han-serif-kr-fonts
+- [ ] cliphist
+- [ ] oh-my-zsh
+- [ ] overskride
+- [ ] pfetch-rs-bin
+- [ ] powerlevel10k
+- [ ] vscodium-bin
+- [ ] wl-clipboard
+- [ ] wlogout
+- [ ] xremap-hypr-bin
+- [ ] zsh-fast-syntax-highlighting
 
 ### Manual
 
-- brillo
-- tpm
-- yay
+- [ ] brillo
+- [ ] tpm
+- [ ] yay
 
 ---
 
