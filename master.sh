@@ -10,7 +10,7 @@ set -euo pipefail
 
 . ./bin/install-brillo.sh
 
-. ./bin/change-shell.sh
+. ./bin/term-env.sh
 
 . ./bin/install-tmux.sh
 
