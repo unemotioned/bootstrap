@@ -2,12 +2,8 @@
 
 set -euo pipefail
 
-yay -S --noconfirm --needed tmux
-
-# Check if TMUX is installed
 if ! command -v tmux &>/dev/null; then
-  echo "TMUX is not installed."
-  exit 1
+  sudo pacman -S --noconfirm tmux
 fi
 
 TPM_DIR="$HOME/.tmux/plugins/tpm"
@@ -19,5 +15,3 @@ else
   echo "Installing TPM"
   git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
 fi
-
-echo "TPM installed."
