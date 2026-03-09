@@ -8,4 +8,4 @@ sudo pacman -S --noconfirm --needed\
   pipewire-audio\
   sof-firmware
 
-systemctl --user enable pipewire pipewire-pulse wireplumber
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
