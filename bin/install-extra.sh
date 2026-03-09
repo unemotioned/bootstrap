@@ -5,7 +5,8 @@ set -euo pipefail
 sudo pacman -S --noconfirm --needed\
   discord\
   firefox\
-  foot
+  foot\
+  opencode
 
 yay -S --noconfirm --needed\
   vscodium-bin

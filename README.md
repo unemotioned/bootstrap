@@ -90,6 +90,7 @@ Packages that can be installed with `pacman`
 - [ ] noto-fonts-cjk
 - [ ] noto-fonts-emoji
 - [ ] npm
+- [ ] opencode
 - [ ] otf-font-awesome
 - [ ] pacman-contrib
 - [ ] pavucontrol
