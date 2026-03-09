@@ -21,6 +21,7 @@ sudo pacman -S --noconfirm --needed\
   fzf\
   git\
   git-delta\
+  github-cli\
   lazygit\
   man-db\
   man-pages\
@@ -34,3 +35,9 @@ yay -S --noconfirm --needed\
   pfetch-rs-bin\
   powerlevel10k\
   zsh-fast-syntax-highlighting
+
+if pacman -Qi github-cli &>/dev/null; then
+  gh auth login
+else
+  echo 'github-cli not installed'
+fi

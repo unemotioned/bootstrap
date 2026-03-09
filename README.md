@@ -69,6 +69,7 @@ Packages that can be installed with `pacman`
 - [ ] fzf
 - [ ] git
 - [ ] git-delta
+- [ ] github-cli
 - [ ] go-md2man
 - [ ] hypridle
 - [ ] hyprlock
