@@ -2,8 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi stow &>/dev/null; then
-  echo 'Stow is not installed.'
-  exit 1
+  sudo pacman -S --noconfirm stow
 fi
 
 if [ ! -d ~/dotfiles ]; then

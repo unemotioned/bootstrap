@@ -24,7 +24,6 @@ sudo pacman -S --noconfirm --needed\
   lazygit\
   man-db\
   man-pages\
-  stow\
   zoxide\
   zsh-autosuggestions\
   zsh-history-substring-search
