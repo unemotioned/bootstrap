@@ -142,7 +142,9 @@ Packages that can only be installed from `AUR` repository
 [bash cheat sheet](https://devhints.io/bash)
 
 - `command -v <pkg>`: look up package in $PATH and return it if found
+
 - `&>/dev/null`: redirect stdout and stderr to /dev/null (print no output)
+
 - `exit 0 ~ 255`: any none-zero value signals an error
 
   | Code  | Meaning                       |
@@ -162,3 +164,12 @@ Packages that can only be installed from `AUR` repository
   | `-u`       | Treat unset variables as errors             |
   | `-o`       | Set a named option                          |
   | `pipefail` | Pipe fails if any command in the pipe fails |
+
+- `sed`: for parsing and transforming text
+
+  | Uses                  | syntax                      |
+  | --------------------- | --------------------------- |
+  | Substitution          | sed 's/old/new' file.txt    |
+  | In-place substitution | sed -i 's/old/new' file.txt |
+  | Delete line           | sed '/pattern/d' file.txt   |
+  | Print specific lines  | sed -n 's/old/new' file.txt |
