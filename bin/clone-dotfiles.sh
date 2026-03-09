@@ -5,11 +5,19 @@ if ! pacman -Qi stow &>/dev/null; then
   sudo pacman -S --noconfirm stow
 fi
 
-if [ ! -d ~/dotfiles ]; then
-  git clone git@github.com:UnEmotioneD/dotfiles.git ~/dotfiles
+if ! pacman -Qi github-cli &>/dev/null; then
+  echo 'github-cli not installed'
+  exit 0
 fi
 
-cd ~/dotfiles
+USER='UnEmotioneD'
+DOT_REPO='dotfiles'
+
+if [ ! -d ~/dotfiles ]; then
+  gh repo clone "$USER"/"$DOT_REPO" "$HOME"/"$DOT_REPO"
+fi
+
+cd "$HOME"/"$DOT_REPO"
 
 if [ -d ~/.config/kitty ]; then
   rm -rf ~/.config/kitty
@@ -37,4 +45,4 @@ stow zsh-arch
 
 bat cache --build
 
-cd ~
+cd "$HOME"
