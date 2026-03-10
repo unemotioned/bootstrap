@@ -31,7 +31,7 @@ stow hypr
 stow icon
 stow kitty
 stow lazygit
-stow --adopt link-wofi
+stow --adopt applications
 stow nvim
 stow sessionizer
 stow tmux
