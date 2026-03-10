@@ -15,6 +15,7 @@ set -euo pipefail
 . ./bin/hypr-eco.sh
 . ./bin/install-lang.sh
 . ./bin/term-env.sh
+. ./bin/gh-setup.sh
 . ./bin/install-yazi.sh
 . ./bin/install-tmux.sh
 . ./bin/install-nvim.sh

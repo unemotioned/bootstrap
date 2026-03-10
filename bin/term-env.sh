@@ -35,9 +35,3 @@ yay -S --noconfirm --needed\
   pfetch-rs-bin\
   powerlevel10k\
   zsh-fast-syntax-highlighting
-
-if pacman -Qi github-cli &>/dev/null; then
-  gh auth login
-else
-  echo 'github-cli not installed'
-fi
