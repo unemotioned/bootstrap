@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-
-if pacman -Qi nautilus &>/dev/null; then
-  echo 'nautilus already installed'
-else
+if ! pacman -Qi nautilus &>/dev/null; then
   sudo pacman -S --noconfirm nautilus
 fi
 
-# TODO: uninstall previous file explorer
+if pamcan -Qi dolphin &>/dev/null; then
+  sudo pacman -Rns dolphin
+fi
+
+# TODO: uninstall dolphin cache files
