@@ -19,3 +19,6 @@ if ! pacman -Qi yay &>/dev/null; then
 fi
 
 cd "$HOME"
+
+# sync with db
+yay
