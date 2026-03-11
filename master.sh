@@ -26,6 +26,8 @@ set -euo pipefail
 . ./bin/remove-orphaned.sh
 . ./bin/clone-dotfiles.sh
 # . ./bin/clone-repos.sh
-# . ./bin/clone-dotfiles.sh
+# . ./bin/clone-zsh-plugins.sh
+
+. ./bin/zoxide-add.sh
 
 . ./src/prompt-reboot.sh
