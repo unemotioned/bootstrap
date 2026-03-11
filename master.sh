@@ -25,7 +25,7 @@ set -euo pipefail
 . ./bin/install-extra.sh
 . ./bin/remove-orphaned.sh
 . ./bin/clone-dotfiles.sh
-# . ./bin/clone-repos.sh
+. ./bin/clone-repos.sh
 # . ./bin/clone-zsh-plugins.sh
 
 . ./bin/zoxide-add.sh

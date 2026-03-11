@@ -6,21 +6,37 @@ if ! pacman -Qi github-cli &>/dev/null; then
   exit 0
 fi
 
-# TODO: do the following
+clone_repo() {
+  local dest="$1"
+  local repo="$2"
+  local target="$dest/$repo"
 
-# check if cloned already
-# mkdir
-# clone w/ gh
-# checkout -b dev
+  mkdir -p "$dest"
+
+  if [[ -d "$target/.git" ]]; then
+    echo "$repo already cloned, skipping"
+    return
+  fi
+
+  echo "Cloning $repo into $dest..."
+  gh repo clone "UnEmotioneD/$repo" "$target"
+
+  if git -C "$target" show-ref --verify --quiet refs/heads/dev; then
+    echo "dev branch already exists for $repo, skipping"
+  else
+    echo "Checking out dev branch for $repo..."
+    git -C "$target" checkout -b dev
+  fi
+}
 
 # ~/dev
-# student-grader
-# english-test
-# guessing-game.rs
+clone_repo "$HOME/dev" student-grader
+clone_repo "$HOME/dev" english-test
+clone_repo "$HOME/dev" guessing-game.rs
 
-# ~/personal/
-# tistory
+# ~/personal
+clone_repo "$HOME/personal" tistory
 
 # ~/repo
-# tmux-tokyo-night
-# tokyonight.nvim
+clone_repo "$HOME/repo" tmux-tokyo-night
+clone_repo "$HOME/repo" tokyonight.nvim
