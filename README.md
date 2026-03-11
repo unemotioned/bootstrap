@@ -57,6 +57,7 @@ Packages that can be installed with `pacman`
 
 - [ ] base-devel
 - [ ] bat
+- [ ] bluetui
 - [ ] bluez
 - [ ] bolt
 - [ ] discord
@@ -76,6 +77,7 @@ Packages that can be installed with `pacman`
 - [ ] hyprpaper
 - [ ] hyprpicker
 - [ ] hyprshot
+- [ ] impala
 - [ ] jdk17-openjdk
 - [ ] lazygit
 - [ ] libinput-tools
@@ -123,14 +125,14 @@ Packages that can only be installed from `AUR` repository
 - [ ] adobe-source-han-sans-kr-fonts
 - [ ] adobe-source-han-serif-kr-fonts
 - [ ] cliphist
+- [ ] localsend-bin
 - [ ] oh-my-zsh-git
-- [ ] overskride
 - [ ] pfetch-rs-bin
-- [ ] zsh-theme-powerlevel10k
 - [ ] vscodium-bin
 - [ ] wlogout
 - [ ] xremap-hypr-bin
 - [ ] zsh-fast-syntax-highlighting
+- [ ] zsh-theme-powerlevel10k
 
 ### Manual
 

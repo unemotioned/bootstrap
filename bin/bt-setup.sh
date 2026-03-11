@@ -3,8 +3,7 @@ set -euo pipefail
 
 sudo pacman -S --noconfirm --needed\
   bluez\
-  bluez-utils
-
-yay -S --noconfirm --needed overskride
+  bluez-utils\
+  bluetui
 
 sudo systemctl enable bluetooth.service

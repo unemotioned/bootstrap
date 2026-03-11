@@ -9,4 +9,5 @@ if pamcan -Qi dolphin &>/dev/null; then
   sudo pacman -Rns dolphin
 fi
 
-# TODO: uninstall dolphin cache files
+rm -rf ~/.local/share/dolphin
+rm ~/.local/state/dolphinstaterc
