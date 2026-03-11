@@ -97,6 +97,7 @@ Packages that can be installed with `pacman`
 - [ ] pavucontrol
 - [ ] pipewire-audio
 - [ ] pnpm
+- [ ] power-profile-daemon
 - [ ] reflector
 - [ ] rustup
 - [ ] satty
