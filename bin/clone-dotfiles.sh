@@ -23,6 +23,10 @@ if [ -d ~/.config/kitty ]; then
   rm -rf ~/.config/kitty
 fi
 
+# backup hyprland.conf
+mv ~/.config/hypr/hyprland.conf ~/.config/hyprland.conf.bak
+rm -rf ~/.config/hyprland
+
 mkdir -p ~/.local/share/applications
 
 stow bat
