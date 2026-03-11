@@ -122,10 +122,10 @@ Packages that can only be installed from `AUR` repository
 - [ ] adobe-source-han-sans-kr-fonts
 - [ ] adobe-source-han-serif-kr-fonts
 - [ ] cliphist
-- [ ] oh-my-zsh
+- [ ] oh-my-zsh-git
 - [ ] overskride
 - [ ] pfetch-rs-bin
-- [ ] powerlevel10k
+- [ ] zsh-theme-powerlevel10k
 - [ ] vscodium-bin
 - [ ] wlogout
 - [ ] xremap-hypr-bin
