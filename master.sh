@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+. ./bin/git-config.sh
 . ./bin/pacman-config.sh
 . ./bin/grub-config.sh
 . ./bin/linux-related.sh
-. ./bin/install-yay.sh
 . ./bin/sort-mirror-list.sh
+. ./bin/install-yay.sh
 . ./bin/paccache.sh
 . ./bin/install-brillo.sh
 . ./bin/bt-setup.sh
@@ -15,7 +16,6 @@ set -euo pipefail
 . ./bin/hypr-eco.sh
 . ./bin/install-lang.sh
 . ./bin/term-env.sh
-. ./bin/git-config.sh
 . ./bin/gh-setup.sh
 . ./bin/install-yazi.sh
 . ./bin/install-tmux.sh

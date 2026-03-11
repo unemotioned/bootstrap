@@ -18,4 +18,4 @@ if ! pacman -Qi yay &>/dev/null; then
   makepkg -si --noconfirm
 fi
 
-cd ~
+cd "$HOME"

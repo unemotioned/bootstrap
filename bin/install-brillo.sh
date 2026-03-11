@@ -10,12 +10,20 @@ if ! pacman -Qi go-md2man &>/dev/null; then
   sudo pacman -S --noconfirm go-md2man
 fi
 
-REPO='repo'
+REPO="$HOME/repo"
+PKG='brillo'
+DIR="$REPO/$PKG"
 
-mkdir -p ~/"$REPO"
-cd ~/"$REPO"
-git clone https://gitlab.com/cameronnemo/brillo.git
-cd ~/"$REPO"/brillo
+mkdir -p "$REPO"
+cd "$REPO"
+
+if [ -d "$DIR" ]; then
+  echo "'$PKG' already cloned"
+else
+  git clone https://gitlab.com/cameronnemo/brillo.git "$DIR"
+fi
+
+cd "$DIR"
 sudo make install.setgid
 
-cd ~
+cd "$HOME"

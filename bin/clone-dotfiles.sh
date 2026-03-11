@@ -11,42 +11,38 @@ if ! pacman -Qi github-cli &>/dev/null; then
 fi
 
 USER='UnEmotioneD'
-DOT_REPO='dotfiles'
+REPO='dotfiles'
 
 if [ ! -d ~/dotfiles ]; then
-  gh repo clone "$USER"/"$DOT_REPO" "$HOME"/"$DOT_REPO"
+  gh repo clone "$USER"/"$REPO" "$HOME"/"$REPO"
 fi
 
-cd "$HOME"/"$DOT_REPO"
+cd "$HOME"/"$REPO"
 
-if [ -d ~/.config/kitty ]; then
-  rm -rf ~/.config/kitty
-fi
-
-# backup hyprland.conf
-mv ~/.config/hypr/hyprland.conf ~/.config/hyprland.conf.bak
 rm -rf ~/.config/hyprland
+rm -rf ~/.config/kitty
 
 mkdir -p ~/.local/share/applications
 
-stow bat
-stow foot
-stow hypr
-stow icon
-stow kitty
-stow lazygit
-stow --adopt applications
-stow nvim
-stow sessionizer
-stow tmux
-stow wallpaper
-stow waybar
-stow wlogout
-stow wofi
-stow xremap
-stow yazi
-stow zsh-arch
+stow --restow bat
+stow --restow foot
+stow --restow hypr
+stow --restow icon
+stow --restow kitty
+stow --restow lazygit
+stow --restow --adopt applications
+stow --restow nvim
+stow --restow sessionizer
+stow --restow tmux
+stow --restow wallpaper
+stow --restow waybar
+stow --restow wlogout
+stow --restow wofi
+stow --restow xremap
+stow --restow yazi
+stow --restow zsh-arch
 
+rm -rf ~/.cache/bat
 bat cache --build
 
 cd "$HOME"

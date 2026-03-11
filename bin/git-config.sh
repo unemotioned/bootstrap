@@ -1,21 +1,23 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-cat >"$HOME"/.gitconfig <<EOF
-[init]
-	defaultBranch = main
-[core]
-  pager = delta
-[interactive]
-  diffFilter = delta --color-only
-[delta]
-  # use n / N to move between diff sections
-  navigate = true
-  side-by-side = true
-  line-numbers = true
-  syntax-theme = Visual Studio Dark+
-[merge]
-  conflictstyle = zdiff3
-[diff]
-  colorMoved = default
-EOF
+read -rp 'Git user name: ' git_name
+read -rp 'Git user email: ' git_email
+
+git config --global user.name "$git_name"
+git config --global user.email "$git_email"
+
+git config --global init.defaultBranch main
+
+git config --global core.pager delta
+
+git config --global interactive.diffFilter 'delta --color-only'
+
+git config --global delta.navigate true
+git config --global delta.side-by-side true
+git config --global delta.line-numbers true
+git config --global delta.syntax-theme 'Visual Studio Dark+'
+
+git config --global merge.conflictstyle zdiff3
+
+git config --global diff.colorMoved default

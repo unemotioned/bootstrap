@@ -17,5 +17,5 @@ git clone --depth 1 -- https://github.com/romkatv/powerlevel10k.git
 
 # zsh-autosuggestions
 git clone --depth 1 -- https://github.com/zsh-users/zsh-autosuggestions
-# zsh-fast-syntax-highlighting
-git clone --depth 1 -- https://github.com/zsh-users/zsh-syntax-highlighting.git
+# fast-syntax-highlighting
+git clone --depth 1 -- https://github.com/zdharma-continuum/fast-syntax-highlighting.git
