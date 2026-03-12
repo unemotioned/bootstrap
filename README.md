@@ -81,7 +81,6 @@ Packages that can be installed with `pacman`
 - [ ] impala
 - [ ] jdk17-openjdk
 - [ ] lazygit
-- [ ] libinput-tools
 - [ ] linux-firmware
 - [ ] linux-lts
 - [ ] linux-lts-headers
@@ -133,7 +132,6 @@ Packages that can only be installed from `AUR` repository
 - [ ] pfetch-rs-bin
 - [ ] vscodium-bin
 - [ ] wlogout
-- [ ] xremap-hypr-bin
 - [ ] zsh-fast-syntax-highlighting
 - [ ] zsh-theme-powerlevel10k
 
