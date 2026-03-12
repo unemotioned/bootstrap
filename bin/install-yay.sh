@@ -18,7 +18,7 @@ if ! pacman -Qi yay &>/dev/null; then
   makepkg -si --noconfirm
 fi
 
-cd "$HOME"
-
 # sync with db
 yay
+
+cd "$OG_DIR"

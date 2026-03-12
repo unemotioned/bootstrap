@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+OG_DIR="$(pwd)"
+
 . ./bin/git-config.sh
 . ./bin/pacman-config.sh
 . ./bin/grub-config.sh
