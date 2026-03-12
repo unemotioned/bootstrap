@@ -15,19 +15,21 @@ clone_repo() {
 
   if [[ -d "$target/.git" ]]; then
     echo "$repo already cloned, skipping"
-    return
+  else
+    echo "Cloning $repo into $dest..."
+    gh repo clone "UnEmotioneD/$repo" "$target"
   fi
-
-  echo "Cloning $repo into $dest..."
-  gh repo clone "UnEmotioneD/$repo" "$target"
 
   if git -C "$target" show-ref --verify --quiet refs/heads/dev; then
     echo "dev branch already exists for $repo, skipping"
   else
-    echo "Checking out dev branch for $repo..."
+    echo "Creating dev branch for $repo..."
     git -C "$target" checkout -b dev
   fi
 }
+
+# ~/dotfiles
+clone_repo "$HOME" dotfiles
 
 # ~/dev
 clone_repo "$HOME/dev" student-grader
@@ -35,6 +37,7 @@ clone_repo "$HOME/dev" english-test
 clone_repo "$HOME/dev" guessing-game.rs
 
 # ~/personal
+clone_repo "$HOME/personal" bootstrap
 clone_repo "$HOME/personal" tistory
 
 # ~/repo
