@@ -4,7 +4,6 @@ set -euo pipefail
 OG_DIR="$(pwd)"
 
 . ./bin/powerprofile.sh
-. ./bin/git-config.sh
 . ./bin/pacman-config.sh
 . ./bin/grub-config.sh
 # . ./bin/linux-related.sh
@@ -12,7 +11,6 @@ OG_DIR="$(pwd)"
 . ./bin/install-yay.sh
 . ./bin/paccache.sh
 . ./bin/install-brillo.sh
-. ./bin/bt-setup.sh
 . ./bin/audio-setup.sh
 . ./bin/install-fcitx.sh
 . ./bin/install-keyd.sh
@@ -24,13 +22,15 @@ OG_DIR="$(pwd)"
 . ./bin/install-fonts.sh
 . ./bin/install-nautilus.sh
 . ./bin/install-extra.sh
+. ./bin/git-config.sh
 . ./bin/gh-setup.sh
 . ./bin/remove-orphaned.sh
 . ./bin/clone-dotfiles.sh
 . ./bin/clone-repos.sh
+. ./bin/zoxide-add.sh
 . ./bin/install-tmux.sh
 #. ./bin/clone-zsh-plugins.sh
 . ./bin/network-setup.sh
-. ./bin/zoxide-add.sh
+. ./bin/bt-setup.sh
 
 . ./src/prompt-reboot.sh
