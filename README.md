@@ -80,6 +80,7 @@ Packages that can be installed with `pacman`
 - [ ] hyprshot
 - [ ] impala
 - [ ] jdk17-openjdk
+- [ ] keyd
 - [ ] lazygit
 - [ ] linux-firmware
 - [ ] linux-lts
