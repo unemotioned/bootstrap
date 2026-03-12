@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+mkdir "$HOME"/Pictures/Screenshots
+
 dirs=(
   "dotfiles"
   ".config"
