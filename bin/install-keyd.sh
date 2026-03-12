@@ -1,26 +1,19 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
-# This script can be sourced or executed directly.
-# When sourced (e.g., from master.sh), the code runs in the current shell.
-# Wrapping in a function scopes set -euo pipefail and variables to avoid
-# affecting the parent shell's environment.
+if ! pacman -Qi keyd &>/dev/null; then
+  sudo pacman -S keyd
+fi
 
-install_keyd() {
-  set -euo pipefail
+DIR='/etc/keyd'
+DEF="$DIR/default.conf"
+KBD="$DIR/kbd.conf"
+BALL="$DIR/ball.conf"
 
-  if ! pacman -Qi keyd &>/dev/null; then
-    sudo pacman -S keyd
-  fi
+sudo mkdir -p "$DIR"
 
-  DIR='/etc/keyd'
-  DEF="$DIR/default.conf"
-  KBD="$DIR/kbd.conf"
-  BALL="$DIR/ball.conf"
-
-  sudo mkdir -p "$DIR"
-
-  if [ ! -f "$DEF" ]; then
-    sudo tee "$DEF" <<EOF
+if [ ! -f "$DEF" ]; then
+  sudo tee "$DEF" <<EOF
 [ids]
 
 *
@@ -29,10 +22,10 @@ install_keyd() {
 
 rightalt = f16
 EOF
-  fi
+fi
 
-  if [ ! -f "$KBD" ]; then
-    sudo tee "$KBD" <<EOF
+if [ ! -f "$KBD" ]; then
+  sudo tee "$KBD" <<EOF
 [ids]
 
 # AT Translated Set 2 keyboard
@@ -44,10 +37,10 @@ rightalt = f16
 capslock = overload(control, esc)
 esc = capslock
 EOF
-  fi
+fi
 
-  if [ ! -f "$BALL" ]; then
-    sudo tee "$BALL" <<EOF
+if [ ! -f "$BALL" ]; then
+  sudo tee "$BALL" <<EOF
 [ids]
 
 # splitkb.com Aurora Sofle v2 rev1
@@ -58,11 +51,8 @@ EOF
 rightmouse = mouse1
 mouse1 = rightmouse
 EOF
-  fi
+fi
 
-  if ! systemctl is-active --quiet keyd; then
-    sudo systemctl enable --now keyd
-  fi
-}
-
-install_keyd
+if ! systemctl is-active --quiet keyd; then
+  sudo systemctl enable --now keyd
+fi
