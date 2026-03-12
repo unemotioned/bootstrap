@@ -28,6 +28,7 @@ set -euo pipefail
 . ./bin/clone-repos.sh
 # . ./bin/clone-zsh-plugins.sh
 
+. ./bin/disable-nmapplet.sh
 . ./bin/zoxide-add.sh
 
 . ./src/prompt-reboot.sh
