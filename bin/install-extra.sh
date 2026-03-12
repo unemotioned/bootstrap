@@ -6,8 +6,14 @@ sudo pacman -S --noconfirm --needed\
   firefox\
   foot\
   opencode\
-  impala
+  impala\
+  dhcpcd
+
 
 yay -S --noconfirm --needed\
   vscodium-bin\
   localsend-bin
+
+sudo systemctl disable --now NetworkManager
+sudo systemctl enable --now iwd
+sudo systemctl enable --now dhcpcd
