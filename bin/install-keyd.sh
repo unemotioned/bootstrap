@@ -10,8 +10,10 @@ DEF="$DIR/default.conf"
 KBD="$DIR/kbd.conf"
 BALL="$DIR/ball.conf"
 
+sudo mkdir -p "$DIR"
+
 if [ ! -f "$DEF" ]; then
-  cat >"$DEF" <<EOF
+  sudo tee "$DEF" <<EOF
 [ids]
 
 *
@@ -23,7 +25,7 @@ EOF
 fi
 
 if [ ! -f "$KBD" ]; then
-  cat >"$KBD" <<EOF
+  sudo tee "$KBD" <<EOF
 [ids]
 
 # AT Translated Set 2 keyboard
@@ -38,7 +40,7 @@ EOF
 fi
 
 if [ ! -f "$BALL" ]; then
-  cat >"$BALL" <<EOF
+  sudo tee "$BALL" <<EOF
 [ids]
 
 # splitkb.com Aurora Sofle v2 rev1
