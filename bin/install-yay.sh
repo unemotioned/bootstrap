@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi base-devel &>/dev/null; then
-  sudo paman -S --noconfirm base-devel
+  sudo pacman -S --noconfirm base-devel
 fi
 
 REPO='repo'

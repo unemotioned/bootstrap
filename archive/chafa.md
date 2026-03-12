@@ -8,7 +8,7 @@ Terminal image rendering tool
 
 ```sh
 if ! pacman -Qi chafa &/dev/null;then
-  sudo paman -S --noconfirm chafa
+  sudo pacman -S --noconfirm chafa
 fi
 ```
 
