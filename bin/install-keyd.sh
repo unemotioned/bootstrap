@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi keyd &>/dev/null; then
-  sudo pacman -S keyd
+  pacman -S keyd
 fi
 
 DIR='/etc/keyd'
@@ -10,10 +10,10 @@ DEF="$DIR/default.conf"
 KBD="$DIR/kbd.conf"
 BALL="$DIR/ball.conf"
 
-sudo mkdir -p "$DIR"
+mkdir -p "$DIR"
 
 if [ ! -f "$DEF" ]; then
-  sudo tee "$DEF" <<EOF
+  tee "$DEF" <<EOF
 [ids]
 
 *
@@ -25,7 +25,7 @@ EOF
 fi
 
 if [ ! -f "$KBD" ]; then
-  sudo tee "$KBD" <<EOF
+  tee "$KBD" <<EOF
 [ids]
 
 # AT Translated Set 2 keyboard
@@ -40,7 +40,7 @@ EOF
 fi
 
 if [ ! -f "$BALL" ]; then
-  sudo tee "$BALL" <<EOF
+  tee "$BALL" <<EOF
 [ids]
 
 # splitkb.com Aurora Sofle v2 rev1
@@ -54,6 +54,6 @@ EOF
 fi
 
 if ! systemctl is-active --quiet keyd; then
-  sudo systemctl enable --now keyd
-  sudo keyd reload
+  systemctl enable --now keyd
+  keyd reload
 fi
