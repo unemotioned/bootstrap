@@ -22,5 +22,7 @@ for opt in "${GRUB_OPTIONS[@]}"; do
   fi
 done
 
+sudo pacman -S --noconfirm --needed os-prober
+
 # Update GRUB config after it's done
 sudo grub-mkconfig -o /boot/grub/grub.cfg

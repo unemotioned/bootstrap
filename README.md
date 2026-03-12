@@ -94,6 +94,7 @@ Packages that can be installed with `pacman`
 - [ ] noto-fonts-emoji
 - [ ] npm
 - [ ] opencode
+- [ ] os-prober
 - [ ] otf-font-awesome
 - [ ] pacman-contrib
 - [ ] pavucontrol
