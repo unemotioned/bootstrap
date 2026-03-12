@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+if ! pacman -Qi base-devel &>/dev/null; then
+  sudo paman -S --noconfirm base-devel
+fi
+
 REPO='repo'
 
 # Create repo directory if it doesn't exist
