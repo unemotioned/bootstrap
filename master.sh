@@ -31,8 +31,6 @@ OG_DIR="$(pwd)"
 . ./bin/install-tmux.sh
 #. ./bin/clone-zsh-plugins.sh
 . ./bin/network-setup.sh
-
-. ./bin/disable-nmapplet.sh
 . ./bin/zoxide-add.sh
 
 . ./src/prompt-reboot.sh
