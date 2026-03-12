@@ -3,6 +3,7 @@ set -euo pipefail
 
 dirs=(
   "dotfiles"
+  ".config"
   ".config/foot"
   ".config/hypr"
   ".config/kitty"
@@ -13,8 +14,11 @@ dirs=(
   ".config/wofi"
   ".config/xremap"
   ".config/yazi"
+  ".local/scripts"
   "personal/bootstrap"
   "personal/tistory"
+  "Pictures/Wallpapers"
+  "Pictures/Screenshots"
 )
 
 for dir in "${dirs[@]}"; do
