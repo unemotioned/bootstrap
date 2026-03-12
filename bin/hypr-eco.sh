@@ -11,7 +11,6 @@ sudo pacman -S --noconfirm --needed\
   hyprshot\
   satty\
   waybar\
-  power-profiles-daemon\
   wl-clipboard
 
 yay -S --noconfirm --needed\

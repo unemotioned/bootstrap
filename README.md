@@ -102,6 +102,7 @@ Packages that can be installed with `pacman`
 - [ ] pipewire-audio
 - [ ] pnpm
 - [ ] power-profiles-daemon
+- [ ] python-gobject
 - [ ] reflector
 - [ ] rustup
 - [ ] satty

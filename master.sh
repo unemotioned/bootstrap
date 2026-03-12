@@ -3,6 +3,7 @@ set -euo pipefail
 
 OG_DIR="$(pwd)"
 
+. ./bin/powerprofile.sh
 . ./bin/git-config.sh
 . ./bin/pacman-config.sh
 . ./bin/grub-config.sh
