@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
-if ! pacman -Qi &>/dev/null; then
+if ! pacman -Qi power-profiles-daemon &>/dev/null; then
   sudo pacman -S --noconfirm power-profiles-daemon
 fi
 

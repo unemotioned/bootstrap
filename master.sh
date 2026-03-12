@@ -7,7 +7,7 @@ OG_DIR="$(pwd)"
 . ./bin/git-config.sh
 . ./bin/pacman-config.sh
 . ./bin/grub-config.sh
-. ./bin/linux-related.sh
+# . ./bin/linux-related.sh
 . ./bin/sort-mirror-list.sh
 . ./bin/install-yay.sh
 . ./bin/paccache.sh

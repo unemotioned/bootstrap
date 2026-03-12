@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 if ! pacman -Qi keyd &>/dev/null; then
   sudo pacman -S keyd
