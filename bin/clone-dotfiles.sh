@@ -19,7 +19,7 @@ fi
 
 cd "$HOME"/"$REPO"
 
-rm -rf ~/.config/hyprland
+rm -rf ~/.config/hypr
 rm -rf ~/.config/kitty
 
 mkdir -p ~/.local/share/applications
