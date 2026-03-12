@@ -19,7 +19,6 @@ OG_DIR="$(pwd)"
 . ./bin/install-lang.sh
 . ./bin/term-env.sh
 . ./bin/install-yazi.sh
-. ./bin/install-tmux.sh
 . ./bin/install-nvim.sh
 . ./bin/install-fonts.sh
 . ./bin/install-nautilus.sh
@@ -28,7 +27,8 @@ OG_DIR="$(pwd)"
 . ./bin/remove-orphaned.sh
 . ./bin/clone-dotfiles.sh
 . ./bin/clone-repos.sh
-# . ./bin/clone-zsh-plugins.sh
+. ./bin/install-tmux.sh
+#. ./bin/clone-zsh-plugins.sh
 
 . ./bin/disable-nmapplet.sh
 . ./bin/zoxide-add.sh
