@@ -13,5 +13,5 @@ if [ -d "$TPM_DIR" ]; then
 else
   echo "Installing TPM"
   git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
-  "$TPM_DIR"/bin/install_plugins
+  # "$TPM_DIR"/bin/install_plugins
 fi
