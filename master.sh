@@ -18,13 +18,13 @@ OG_DIR="$(pwd)"
 . ./bin/hypr-eco.sh
 . ./bin/install-lang.sh
 . ./bin/term-env.sh
-. ./bin/gh-setup.sh
 . ./bin/install-yazi.sh
 . ./bin/install-tmux.sh
 . ./bin/install-nvim.sh
 . ./bin/install-fonts.sh
 . ./bin/install-nautilus.sh
 . ./bin/install-extra.sh
+. ./bin/gh-setup.sh
 . ./bin/remove-orphaned.sh
 . ./bin/clone-dotfiles.sh
 . ./bin/clone-repos.sh
