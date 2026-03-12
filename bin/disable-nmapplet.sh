@@ -2,7 +2,9 @@
 set -e
 
 if pacman -Qi networkmanager-applet >/dev/null; then
-    sudo sh -c 'echo "Hidden=true" >> /etc/xdg/autostart/nm-applet.desktop'
-    killall -9 nm-applet
-    sudo pacman -Rns --noconfirm networkmanager-applet
+  sudo pacman -Rns --noconfirm networkmanager-applet
+fi
+
+if [ -f '/etc/xdg/autostart/nm-applet.desktop' ]; then
+  rm /etc/xdg/autostart/nm-applet.desktop
 fi
