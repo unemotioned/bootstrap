@@ -6,5 +6,5 @@ if pacman -Qi networkmanager-applet >/dev/null; then
 fi
 
 if [ -f '/etc/xdg/autostart/nm-applet.desktop' ]; then
-  rm /etc/xdg/autostart/nm-applet.desktop
+  rm -f /etc/xdg/autostart/nm-applet.desktop
 fi
