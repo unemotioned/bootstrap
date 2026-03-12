@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi yazi &>/dev/null;then
-  sudo pacman -S --noconfirm yazi
+  sudo pamcan -S yazi
 fi
 
 sudo pacman -S --noconfirm --needed\
