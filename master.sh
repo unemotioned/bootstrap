@@ -15,7 +15,7 @@ OG_DIR="$(pwd)"
 . ./bin/bt-setup.sh
 . ./bin/audio-setup.sh
 . ./bin/install-fcitx.sh
-. ./bin/install-xremap.sh
+# . ./bin/install-xremap.sh
 . ./bin/hypr-eco.sh
 . ./bin/install-lang.sh
 . ./bin/term-env.sh
