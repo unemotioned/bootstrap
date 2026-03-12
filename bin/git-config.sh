@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-read -rp 'Git user name: ' git_name
-read -rp 'Git user email: ' git_email
+if [ -z "$(git config --global user.name)" ]; then
+  read -rp 'Git user name: ' git_name
+  git config --global user.name "$git_name"
+fi
 
-git config --global user.name "$git_name"
-git config --global user.email "$git_email"
+if [ -z "$(git config --global user.email)" ]; then
+  read -rp 'Git user email: ' git_email
+  git config --global user.email "$git_email"
+fi
 
 git config --global init.defaultBranch main
 
