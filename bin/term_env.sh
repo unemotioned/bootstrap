@@ -4,24 +4,24 @@ set -euo pipefail
 . "$EXE_PATH"/src/lib.sh
 
 install=(
-  'bat'
-  'eza'
-  'fd'
-  'fzf'
-  'git'
-  'git-delta'
-  'github-cli'
-  'lazygit'
-  'man-db'
-  'man-pages'
-  'oh-my-zsh-git'
-  'pfetch-rs-bin'
-  'zoxide'
-  'zsh'
-  'zsh-autosuggestions'
-  'zsh-fast-syntax-highlighting'
-  'zsh-history-substring-search'
-  'zsh-theme-powerlevel10k'
+  bat
+  eza
+  fd
+  fzf
+  git
+  git-delta
+  github-cli
+  lazygit
+  man-db
+  man-pages
+  oh-my-zsh-git
+  pfetch-rs-bin
+  zoxide
+  zsh
+  zsh-autosuggestions
+  zsh-fast-syntax-highlighting
+  zsh-history-substring-search
+  zsh-theme-powerlevel10k
 )
 
 install_pkgs install

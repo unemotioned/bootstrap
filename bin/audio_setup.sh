@@ -6,11 +6,11 @@ set -euo pipefail
 # TODO: move bolt to somewhere else
 
 install=(
-  'bolt'
-  'pavucontrol'
-  'pipewire-audio'
-  'pipewire-pulse'
-  'sof-firmware'
+  bolt
+  pavucontrol
+  pipewire-audio
+  pipewire-pulse
+  sof-firmware
 )
 
 install_pkgs install

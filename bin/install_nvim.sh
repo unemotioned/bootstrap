@@ -4,16 +4,16 @@ set -euo pipefail
 . "$EXE_PATH"/src/lib.sh
 
 install=(
-  'base-devel'
-  'lsof'
-  'neovim'
-  'nodejs'
-  'noto-fonts-emoji'
-  'npm'
-  'pnpm'
-  'unzip'
-  'wl-clipboard'
-  'yarn'
+  base-devel
+  lsof
+  neovim
+  nodejs
+  noto-fonts-emoji
+  npm
+  pnpm
+  unzip
+  wl-clipboard
+  yarn
 )
 
 install_pkgs install

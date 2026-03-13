@@ -4,9 +4,9 @@ set -euo pipefail
 . "$EXE_PATH"/src/lib.sh
 
 install=(
-  'bluez'
-  'bluez-utils'
-  'bluetui'
+  bluez
+  bluez-utils
+  bluetui
 )
 
 install_pkgs install

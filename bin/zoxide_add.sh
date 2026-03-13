@@ -2,26 +2,26 @@
 set -euo pipefail
 
 dirs=(
-  "dotfiles"
-  ".config"
-  ".config/foot"
-  ".config/hypr"
-  ".config/kitty"
-  ".config/lazygit"
-  ".config/nvim"
-  ".config/waybar"
-  ".config/wlogout"
-  ".config/wofi"
-  ".config/yazi"
-  ".local/scripts"
-  "personal"
-  "personal/bootstrap"
-  "personal/tistory"
-  "Pictures/Wallpapers"
-  "Pictures/Screenshots"
-  "repo"
-  "repo/tmux-tokyo-night"
-  "repo/tokyonight.nvim"
+  dotfiles
+  .config
+  .config/foot
+  .config/hypr
+  .config/kitty
+  .config/lazygit
+  .config/nvim
+  .config/waybar
+  .config/wlogout
+  .config/wofi
+  .config/yazi
+  .local/scripts
+  personal
+  personal/bootstrap
+  personal/tistory
+  Pictures/Wallpapers
+  Pictures/Screenshots
+  repo
+  repo/tmux-tokyo-night
+  repo/tokyonight.nvim
 )
 
 for dir in "${dirs[@]}"; do
