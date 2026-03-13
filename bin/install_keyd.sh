@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi keyd &>/dev/null; then
-  sudo pacman -S --noconfirm keyd
-fi
+sudo pacman -S --noconfirm --needed keyd
 
 DIR='/etc/keyd'
 DEF="$DIR/default.conf"

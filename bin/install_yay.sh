@@ -1,24 +1,23 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi base-devel &>/dev/null; then
-  sudo pacman -S --noconfirm base-devel
-fi
+sudo pacman -S --noconfirm --needed base-devel
 
-REPO='repo'
+REPO="$HOME/repo"
+YAY="$REPO/yay"
 
 # Create repo directory if it doesn't exist
-mkdir -p ~/"$REPO"
+mkdir -p "$REPO"
 
 # Clone yay AUR helper source if not already present
-if [ ! -d ~/"$REPO"/yay ]; then
-  cd ~/"$REPO"
+if [ ! -d "$YAY" ]; then
+  cd "$REPO"
   git clone https://aur.archlinux.org/yay.git
 fi
 
 # Build and install yay if not already installed
 if ! pacman -Qi yay &>/dev/null; then
-  cd ~/"$REPO"/yay
+  cd "$YAY"
   makepkg -si --noconfirm
 fi
 

@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi tmux &>/dev/null; then
-  sudo pacman -S --noconfirm tmux
-fi
+sudo pacman -S --noconfirm --needed tmux
 
 TPM_DIR="$HOME/.tmux/plugins/tpm"
 
-# Check if TPM is already installed
 if [ -d "$TPM_DIR" ]; then
   echo "TPM is already installed."
 else

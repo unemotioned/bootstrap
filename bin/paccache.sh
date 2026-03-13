@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi pacman-contrib &>/dev/null; then
-  sudo pacman -S --noconfirm pacman-contrib
-fi
+sudo pacman -S --noconfirm --needed pacman-contrib
 
+# every week
+# keep lateset 3
 sudo systemctl enable --now paccache.timer

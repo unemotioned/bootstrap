@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi nautilus &>/dev/null; then
-  sudo pacman -S --noconfirm nautilus
-fi
+sudo pacman -S --noconfirm --noconfirm nautilus
 
 if pacman -Qi dolphin &>/dev/null; then
   sudo pacman -Rns dolphin
 fi
 
-rm -rf\
-  ~/.local/share/dolphin\
-  ~/.local/state/dolphinstaterc
+rm -rf ~/.local/share/dolphin ~/.local/state/dolphinstaterc
