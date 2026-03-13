@@ -26,4 +26,9 @@ fi
 cd "$DIR"
 sudo make install.setgid
 
+BCTL='brightnessctl'
+if pacman -Qi "$BCTL" &>/dev/null; then
+  sudo pacman -Rns --noconfirm "$BCTL"
+fi
+
 cd "$EXE_PATH"
