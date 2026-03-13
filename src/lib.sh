@@ -3,6 +3,7 @@ set -euo pipefail
 
 install_pkgs() {
   local -n pkgs="$1"
+
   yay -S --noconfirm --needed "${pkgs[@]}"
 }
 
