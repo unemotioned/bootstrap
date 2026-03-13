@@ -23,14 +23,15 @@ rm -rf ~/.config/hypr
 rm -rf ~/.config/kitty
 
 mkdir -p ~/.local/share/applications
+mkdir -p "$HOME"/Pictures/Screenshots
 
+stow --restow --adopt applications
 stow --restow bat
 stow --restow foot
 stow --restow hypr
 stow --restow icon
 stow --restow kitty
 stow --restow lazygit
-stow --restow --adopt applications
 stow --restow nvim
 stow --restow sessionizer
 stow --restow tmux
