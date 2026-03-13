@@ -28,9 +28,6 @@ clone_repo() {
   fi
 }
 
-# ~/dotfiles
-clone_repo "$HOME" dotfiles
-
 # ~/dev
 clone_repo "$HOME/dev" student-grader
 clone_repo "$HOME/dev" english-test
