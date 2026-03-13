@@ -23,13 +23,13 @@ OG_DIR="$(pwd)"
 . ./bin/install-extra.sh
 . ./bin/git-config.sh
 . ./bin/gh-setup.sh
-. ./bin/remove-orphaned.sh
 . ./bin/clone-dotfiles.sh
 . ./bin/clone-repos.sh
 . ./bin/zoxide-add.sh
 . ./bin/install-tmux.sh
 . ./bin/bt-setup.sh
 . ./bin/network-setup.sh
+. ./bin/remove-orphaned.sh
 . ./bin/remove-bash-files.sh
 
 . ./bin/prompt-reboot.sh
