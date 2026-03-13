@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi reflector &>/dev/null; then
-  sudo pacman -S --noconfirm reflector
-fi
+sudo pacman -S --noconfirm --needed reflector
+
+LIST='/etc/pacman.d/mirrorlist'
 
 # sort 10 fastest servers
-sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save "$LIST"
 
 # update pacman
 sudo pacman -Syu --noconfirm
