@@ -13,7 +13,7 @@ echo ''
 
 [ -f "$HEHE_KITTY" ] && chafa "$HEHE_KITTY"
 
-read -rp 'Reboot now? [Y/n] ' answer
+read -rp 'Reboot now? [Y/n]: ' answer
 
 if [[ "${answer,,}" == 'y' || -z "${answer}" ]]; then
   echo 'System will reboot now'

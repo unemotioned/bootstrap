@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm --needed reflector
 
 LIST='/etc/pacman.d/mirrorlist'
 
-read -rp 'Sort mirror list? [Y/n]' answer
+read -rp 'Sort mirror list? [Y/n]: ' answer
 
 if [[ "${answer,,}" == 'y' || -z "${answer}" ]]; then
   # sort 10 fastest servers
