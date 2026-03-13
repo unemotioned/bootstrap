@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi github-cli &>/dev/null; then
-  echo 'github-cli is not installed'
-  exit 0
-fi
+sudo pacman -S --noconfirm --needed github-cli
 
 clone_repo() {
   local dest="$1"
@@ -17,7 +14,7 @@ clone_repo() {
     echo "$repo already cloned, skipping"
   else
     echo "Cloning $repo into $dest..."
-    gh repo clone "unemotioned/$repo" "$target"
+    gh repo clone "$USER/$repo" "$target"
   fi
 
   if git -C "$target" show-ref --verify --quiet refs/heads/dev; then
