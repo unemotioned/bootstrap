@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi power-profiles-daemon &>/dev/null; then
-  sudo pacman -S --noconfirm power-profiles-daemon
-fi
+. "$EXE_PATH"/src/lib.sh
 
-if ! pacman -Qi python-gobject &>/dev/null; then
-  sudo pacman -S --noconfirm python-gobject
-fi
+install=(
+  power-profiles-daemon
+  python-gobject
+)
+
+install_pkgs install
 
 STATUS="$(powerprofilesctl get)"
 
-PERF='performance' # power-saver | balanced
+MODE='performance' # power-saver | balanced | performance
 
-if [ ! "$STATUS" = "$PERF" ]; then
-  powerprofilesctl set "$PERF"
-  echo 'power-profiles-daemon is now set "Performance" mode.'
+if [ ! "$STATUS" = "$MODE" ]; then
+  powerprofilesctl set "$MODE"
+  echo 'power-profiles-daemon is now set to "Performance" mode'
 fi
