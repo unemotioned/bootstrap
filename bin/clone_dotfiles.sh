@@ -1,29 +1,22 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi stow &>/dev/null; then
-  sudo pacman -S --noconfirm stow
-fi
+sudo pacman -S --noconfirm --needed stow github-cli
 
-if ! pacman -Qi github-cli &>/dev/null; then
-  echo 'github-cli not installed'
-  exit 0
-fi
-
-USER='unemotioned'
 REPO='dotfiles'
+DIR="$HOME/$REPO"
 
-if [ ! -d "$HOME/$REPO" ]; then
-  gh repo clone "$USER"/"$REPO" "$HOME"/"$REPO"
+if [ ! -d "$DIR" ]; then
+  gh repo clone "$USER"/"$REPO" "$DIR"
 fi
 
-cd "$HOME"/"$REPO"
+cd "$DIR"
 
 rm -rf ~/.config/hypr
 rm -rf ~/.config/kitty
 
 mkdir -p ~/.local/share/applications
-mkdir -p "$HOME"/Pictures/Screenshots
+mkdir -p ~/Pictures/Screenshots
 
 stow --restow --adopt applications
 stow --restow bat
