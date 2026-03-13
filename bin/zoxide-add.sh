@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-mkdir "$HOME"/Pictures/Screenshots
+mkdir -p "$HOME"/Pictures/Screenshots
 
 dirs=(
   "dotfiles"
