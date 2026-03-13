@@ -6,7 +6,6 @@ OG_DIR="$(pwd)"
 . ./bin/powerprofile.sh
 . ./bin/pacman-config.sh
 . ./bin/grub-config.sh
-# . ./bin/linux-related.sh
 . ./bin/sort-mirror-list.sh
 . ./bin/install-yay.sh
 . ./bin/paccache.sh
@@ -29,8 +28,8 @@ OG_DIR="$(pwd)"
 . ./bin/clone-repos.sh
 . ./bin/zoxide-add.sh
 . ./bin/install-tmux.sh
-# . ./bin/clone-zsh-plugins.sh
 . ./bin/bt-setup.sh
 . ./bin/network-setup.sh
+. ./bin/remove-bash-files.sh
 
-. ./src/prompt-reboot.sh
+. ./bin/prompt-reboot.sh

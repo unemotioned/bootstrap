@@ -19,8 +19,8 @@ chafa "$SCRIPT_DIR/../archive/hehe_kitty.png"
 read -rp 'Reboot now? [y/N] ' answer
 
 if [[ "${answer,,}" == 'y' ]]; then
-  echo 'System will reboot now'
-  sleep 2 # sleep for 2 seconds
+  echo 'System will reboot now.'
+  sleep 1
   sudo systemctl reboot
 else
   echo 'Reboot cancelled'
