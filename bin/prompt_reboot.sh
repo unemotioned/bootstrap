@@ -5,11 +5,9 @@ HEHE_KITTY="$EXE_PATH/archive/hehe_kitty.png"
 
 clear -x
 
-echo ''
 echo '======================================================'
 echo 'Installation and configuration completed successfully.'
 echo '======================================================'
-echo ''
 
 [ -f "$HEHE_KITTY" ] && chafa "$HEHE_KITTY"
 
