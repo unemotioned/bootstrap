@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-. ../src/lib.sh
+. "$EXE_PATH"/src/lib.sh
 
 install=(
   adobe-source-han-sans-kr-fonts
