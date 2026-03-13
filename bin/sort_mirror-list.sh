@@ -5,8 +5,15 @@ sudo pacman -S --noconfirm --needed reflector
 
 LIST='/etc/pacman.d/mirrorlist'
 
-# sort 10 fastest servers
-sudo reflector --verbose --latest 10 --protocol https --sort rate --save "$LIST"
+read -rp 'Sort mirror list? [Y/n]' answer
 
-# update pacman
-sudo pacman -Syu --noconfirm
+if [[ "${answer,,}" == 'y' || -z "${answer}" ]]; then
+  # sort 10 fastest servers
+  sudo reflector --verbose --latest 10 --protocol https --sort rate --save "$LIST"
+  # update pacman
+  sudo pacman -Syu --noconfirm
+elif [[ "${answer,,}" == 'n' ]]; then
+  echo "Skipping mirror list sort."
+else
+  echo "Invalid input. Skipping mirror list sort."
+fi
