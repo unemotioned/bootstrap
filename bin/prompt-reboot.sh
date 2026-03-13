@@ -6,15 +6,19 @@ if ! pacman -Qi chafa &>/dev/null; then
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+HEHE_KITTY="$SCRIPT_DIR/../archive/hehe_kitty.png"
 
 clear
 
 echo ''
-echo '====================================================='
-echo 'Installation and configuration completed successfully'
-echo '====================================================='
+echo '======================================================'
+echo 'Installation and configuration completed successfully.'
+echo '======================================================'
 echo ''
-chafa "$SCRIPT_DIR/../archive/hehe_kitty.png"
+
+if [ -f "$HEHE_KITTY" ]; then
+  chafa "$HEHE_KITTY"
+fi
 
 read -rp 'Reboot now? [y/N] ' answer
 
