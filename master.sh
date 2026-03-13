@@ -28,6 +28,7 @@ EXE_PATH="$(pwd)"
 . ./bin/zoxide-add.sh
 . ./bin/install-tmux.sh
 . ./bin/bt-setup.sh
+. ./bin/install-chafa.sh
 . ./bin/network-setup.sh
 . ./bin/remove-orphaned.sh
 . ./bin/remove-bash-files.sh

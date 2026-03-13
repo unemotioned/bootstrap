@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi chafa &>/dev/null; then
-  sudo pacman -S --noconfirm chafa
-fi
-
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 HEHE_KITTY="$SCRIPT_DIR/../archive/hehe_kitty.png"
 
