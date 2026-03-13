@@ -2,8 +2,8 @@
 set -euo pipefail
 
 sudo pacman -S --noconfirm --needed\
+  chromium\
   discord\
-  firefox\
   foot\
   opencode\
 
