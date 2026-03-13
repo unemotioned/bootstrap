@@ -20,7 +20,6 @@ read -rp 'Reboot now? [y/N] ' answer
 
 if [[ "${answer,,}" == 'y' ]]; then
   echo 'System will reboot now.'
-  sleep 1
   sudo systemctl reboot
 else
   echo 'Reboot cancelled'
