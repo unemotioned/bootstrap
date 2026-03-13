@@ -15,4 +15,4 @@ install=(
 
 install_pkgs install
 
-fc-cache -fv
+fc-cache -v
