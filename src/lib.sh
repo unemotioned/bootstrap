@@ -1,24 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-install_pkg() {
-  local pkg="$1"
-  if ! pacman -Qi "$pkg" &>/dev/null; then
-    sudo pacman -S --noconfirm "$pkg"
-  fi
-}
-
 install_pkgs() {
-  local pkgs=("$@")
-  local missing=()
-  for pkg in "${pkgs[@]}"; do
-    if ! pacman -Qi "$pkg" &>/dev/null; then
-      missing+=("$pkg")
-    fi
-  done
-  if [ ${#missing[@]} -gt 0 ]; then
-    sudo pacman -S --noconfirm --needed "${missing[@]}"
-  fi
+  local -n pkgs="$1"
+  yay -S --noconfirm --needed "${pkgs[@]}"
 }
 
 ensure_dir() {
