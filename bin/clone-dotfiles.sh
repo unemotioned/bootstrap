@@ -13,7 +13,7 @@ fi
 USER='UnEmotioneD'
 REPO='dotfiles'
 
-if [ ! -d ~/dotfiles ]; then
+if [ ! -d "$HOME/$REPO" ]; then
   gh repo clone "$USER"/"$REPO" "$HOME"/"$REPO"
 fi
 
