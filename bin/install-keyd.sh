@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if ! pacman -Qi keyd &>/dev/null; then
-  sudo pacman -S keyd
+  sudo pacman -S --noconfirm keyd
 fi
 
 DIR='/etc/keyd'
