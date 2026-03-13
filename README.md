@@ -55,89 +55,89 @@ cd ~/bootstrap
 
 Packages that can be installed with `pacman`
 
-- [ ] base-devel
-- [ ] bat
-- [ ] bluetui
-- [ ] bluez
-- [ ] bolt
-- [ ] chromium
-- [ ] dhcpcd
-- [ ] discord
-- [ ] eza
-- [ ] fcitx5-configtool
-- [ ] fcitx5-hangul
-- [ ] fcitx5-im
-- [ ] foot
-- [ ] fzf
-- [ ] git
-- [ ] git-delta
-- [ ] github-cli
-- [ ] go-md2man
-- [ ] hypridle
-- [ ] hyprlock
-- [ ] hyprpaper
-- [ ] hyprpicker
-- [ ] hyprshot
-- [ ] impala
-- [ ] jdk17-openjdk
-- [ ] keyd
-- [ ] lazygit
-- [ ] linux-firmware
-- [ ] linux-lts
-- [ ] linux-lts-headers
-- [ ] lsof
-- [ ] man-db
-- [ ] man-pages
-- [ ] nautilus
-- [ ] neovim
-- [ ] node
-- [ ] noto-fonts-cjk
-- [ ] noto-fonts-emoji
-- [ ] npm
-- [ ] opencode
-- [ ] os-prober
-- [ ] otf-font-awesome
-- [ ] pacman-contrib
-- [ ] pavucontrol
-- [ ] pipewire-audio
-- [ ] pnpm
-- [ ] power-profiles-daemon
-- [ ] python-gobject
-- [ ] reflector
-- [ ] rustup
-- [ ] satty
-- [ ] sof-firmware
-- [ ] stow
-- [ ] tmux
-- [ ] ttf-iosevka-nerd
-- [ ] ttf-jetbrains-mono-nerd
-- [ ] unzip
-- [ ] waybar
-- [ ] wl-clipboard
-- [ ] yarn
-- [ ] yazi(dependencies: ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
-- [ ] zoxide
-- [ ] zsh
-- [ ] zsh-autosuggestions
-- [ ] zsh-history-substring-search
+- base-devel
+- bat
+- bluetui
+- bluez
+- bolt
+- chromium
+- dhcpcd
+- discord
+- eza
+- fcitx5-configtool
+- fcitx5-hangul
+- fcitx5-im
+- foot
+- fzf
+- git
+- git-delta
+- github-cli
+- go-md2man
+- hypridle
+- hyprlock
+- hyprpaper
+- hyprpicker
+- hyprshot
+- impala
+- jdk17-openjdk
+- keyd
+- lazygit
+- linux-firmware
+- linux-lts
+- linux-lts-headers
+- lsof
+- man-db
+- man-pages
+- nautilus
+- neovim
+- node
+- noto-fonts-cjk
+- noto-fonts-emoji
+- npm
+- opencode
+- os-prober
+- otf-font-awesome
+- pacman-contrib
+- pavucontrol
+- pipewire-audio
+- pnpm
+- power-profiles-daemon
+- python-gobject
+- reflector
+- rustup
+- satty
+- sof-firmware
+- stow
+- tmux
+- ttf-iosevka-nerd
+- ttf-jetbrains-mono-nerd
+- unzip
+- waybar
+- wl-clipboard
+- yarn
+- yazi(dependencies: ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
+- zoxide
+- zsh
+- zsh-autosuggestions
+- zsh-history-substring-search
 
 ### AUR
 
 Packages that can only be installed from `AUR` repository
 
-- [ ] adobe-source-han-sans-kr-fonts
-- [ ] adobe-source-han-serif-kr-fonts
-- [ ] cliphist
-- [ ] localsend-bin
-- [ ] oh-my-zsh-git
-- [ ] pfetch-rs-bin
-- [ ] vscodium-bin
-- [ ] wlogout
-- [ ] zsh-fast-syntax-highlighting
-- [ ] zsh-theme-powerlevel10k
+- adobe-source-han-sans-kr-fonts
+- adobe-source-han-serif-kr-fonts
+- cliphist
+- localsend-bin
+- oh-my-zsh-git
+- pfetch-rs-bin
+- vscodium-bin
+- wlogout
+- zsh-fast-syntax-highlighting
+- zsh-theme-powerlevel10k
 
 ### Manual
 
-- [ ] brillo
-- [ ] tpm
-- [ ] yay
+- brillo
+- tpm
+- yay
