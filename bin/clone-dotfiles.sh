@@ -45,4 +45,4 @@ stow --restow zsh-arch
 rm -rf ~/.cache/bat
 bat cache --build
 
-cd "$OG_DIR"
+cd "$EXE_PATH"

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OG_DIR="$(pwd)"
+EXE_PATH="$(pwd)"
 
 . ./bin/powerprofile.sh
 . ./bin/pacman-config.sh

@@ -25,4 +25,4 @@ fi
 # sync with db
 yay
 
-cd "$OG_DIR"
+cd "$EXE_PATH"

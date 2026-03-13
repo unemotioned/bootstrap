@@ -26,4 +26,4 @@ fi
 cd "$DIR"
 sudo make install.setgid
 
-cd "$OG_DIR"
+cd "$EXE_PATH"
