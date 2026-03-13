@@ -10,7 +10,7 @@ if ! pacman -Qi github-cli &>/dev/null; then
   exit 0
 fi
 
-USER='UnEmotioneD'
+USER='unemotioned'
 REPO='dotfiles'
 
 if [ ! -d "$HOME/$REPO" ]; then

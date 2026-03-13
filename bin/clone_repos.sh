@@ -17,7 +17,7 @@ clone_repo() {
     echo "$repo already cloned, skipping"
   else
     echo "Cloning $repo into $dest..."
-    gh repo clone "UnEmotioneD/$repo" "$target"
+    gh repo clone "unemotioned/$repo" "$target"
   fi
 
   if git -C "$target" show-ref --verify --quiet refs/heads/dev; then

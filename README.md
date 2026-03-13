@@ -39,7 +39,7 @@ sudo pacman -Syu git
 3. execute `master.sh` script
 
 ```sh
-git clone https://github.com/UnEmotioneD/bootstrap.git
+git clone https://github.com/unemotioned/bootstrap.git
 cd ~/bootstrap
 ./master.sh
 ```
