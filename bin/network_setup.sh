@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sudo pacman -S --noconfirm --needed\
-  iwd\
-  impala\
-  dhcpcd
+sudo pacman -S --noconfirm --needed impala iwd dhcpcd
 
 # disable auto start
 if [ -f /etc/xdg/autostart/nm-applet.desktop ]; then
@@ -12,12 +9,11 @@ if [ -f /etc/xdg/autostart/nm-applet.desktop ]; then
 fi
 
 sudo systemctl disable --now NetworkManager
-sudo systemctl enable --now iwd
-sudo systemctl enable --now dhcpcd
+sudo systemctl enable --now iwd dhcpcd
 
 if ! ping -c 1 -W 1 8.8.8.8 &>/dev/null; then
-  read -r -p "WiFi SSID: " ssid
-  read -r -sp "WiFi Password: " password
+  read -r -p "Wi-Fi SSID: " ssid
+  read -r -sp "Wi-Fi PW: " password
   echo
 
   device=$(iwctl device list | awk '/wlan/ {print $2; exit}')

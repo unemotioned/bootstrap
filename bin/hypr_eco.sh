@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# TODO: change hyprshot functionality with satty
+. ../src/lib.sh
 
-sudo pacman -S --noconfirm --needed\
-  hypridle\
-  hyprlock\
-  hyprpaper\
-  hyprpicker\
-  hyprshot\
-  satty\
-  waybar\
-  wl-clipboard
+install=(
+  'cliphist'
+  'hypridle'
+  'hyprlock'
+  'hyprpaper'
+  'hyprpicker'
+  'hyprshot'
+  'satty'
+  'waybar'
+  'wl-clipboard'
+  'wlogout'
+)
 
-yay -S --noconfirm --needed\
-  cliphist\
-  wlogout
+install_pkgs install

@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sudo pacman -S --noconfirm --needed\
-  chromium\
-  discord\
-  foot\
-  opencode\
+. ../src/lib.sh
 
-yay -S --noconfirm --needed\
-  vscodium-bin\
-  localsend-bin
+install=(
+  'chromium'
+  'discord'
+  'foot'
+  'localsend-bin'
+  'opencode'
+  'vscodium-bin'
+)
+
+install_pkgs install

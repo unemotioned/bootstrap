@@ -1,17 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if ! pacman -Qi neovim &>/dev/null; then
-  sudo pacman -S --noconfirm neovim
-fi
+. ../src/lib.sh
 
-sudo pacman -S --noconfirm --needed\
-  noto-fonts-emoji\
-  wl-clipboard\
-  base-devel\
-  unzip\
-  nodejs\
-  npm\
-  pnpm\
-  yarn\
-  lsof
+install=(
+  'base-devel'
+  'lsof'
+  'neovim'
+  'nodejs'
+  'noto-fonts-emoji'
+  'npm'
+  'pnpm'
+  'unzip'
+  'wl-clipboard'
+  'yarn'
+)
+
+install_pkgs install
