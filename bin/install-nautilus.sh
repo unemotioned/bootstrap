@@ -7,5 +7,8 @@ fi
 
 if pacman -Qi dolphin &>/dev/null; then
   sudo pacman -Rns dolphin
-  rm -rf ~/.local/share/dolphin ~/.local/state/dolphinstaterc
 fi
+
+rm -rf\
+  ~/.local/share/dolphin\
+  ~/.local/state/dolphinstaterc
