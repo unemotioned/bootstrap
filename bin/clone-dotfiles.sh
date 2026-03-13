@@ -39,7 +39,6 @@ stow --restow wallpaper
 stow --restow waybar
 stow --restow wlogout
 stow --restow wofi
-stow --restow xremap
 stow --restow yazi
 stow --restow zsh-arch
 

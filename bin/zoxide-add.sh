@@ -12,7 +12,6 @@ dirs=(
   ".config/waybar"
   ".config/wlogout"
   ".config/wofi"
-  ".config/xremap"
   ".config/yazi"
   ".local/scripts"
   "personal/bootstrap"
