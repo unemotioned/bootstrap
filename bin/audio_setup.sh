@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# TODO: move bolt(thunder bolt i/o) to somewhre else
+. ../src/lib.sh
 
-sudo pacman -S --noconfirm --needed\
-  bolt\
-  pavucontrol\
-  pipewire-audio\
-  pipewire-pulse\
-  sof-firmware
+# TODO: move bolt to somewhere else
+
+install=(
+  'bolt'
+  'pavucontrol'
+  'pipewire-audio'
+  'pipewire-pulse'
+  'sof-firmware'
+)
+
+install_pkgs install
 
 systemctl --user enable --now pipewire pipewire-pulse wireplumber
