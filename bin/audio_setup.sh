@@ -5,6 +5,7 @@ set -euo pipefail
 
 # TODO: move bolt to somewhere else
 
+# shellcheck disable=SC2034
 install=(
   bolt
   pavucontrol

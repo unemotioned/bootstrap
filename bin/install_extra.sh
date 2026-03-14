@@ -3,6 +3,7 @@ set -euo pipefail
 
 . "$EXE_PATH"/src/lib.sh
 
+# shellcheck disable=SC2034
 install=(
   chromium
   discord
