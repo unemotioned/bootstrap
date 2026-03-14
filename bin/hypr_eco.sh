@@ -11,10 +11,12 @@ install=(
   hyprmon
   hyprpaper
   hyprpicker
+  libqalculate
   satty
   waybar
   wl-clipboard
   wlogout
+  wofimoji
 )
 
 install_pkgs install
