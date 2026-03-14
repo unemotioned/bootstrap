@@ -7,7 +7,7 @@ USER='unemotioned'
 . ./bin/powerprofile.sh
 . ./bin/pacman_config.sh
 . ./bin/grub_config.sh
-. ./bin/sort_mirror-list.sh
+. ./bin/sort_mirror_list.sh
 . ./bin/install_yay.sh
 . ./bin/paccache.sh
 . ./bin/install_brillo.sh
@@ -32,7 +32,7 @@ USER='unemotioned'
 . ./bin/install_chafa.sh
 . ./bin/bt_setup.sh
 . ./bin/network_setup.sh
-. ./bin/remove_bash-files.sh
+. ./bin/remove_bash_files.sh
 . ./bin/remove_orphaned.sh
 
 . ./bin/prompt_reboot.sh
