@@ -22,12 +22,14 @@ My workflow: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
 ## Prerequisite
 
-Manually install the following package
+- `Arch Linux`: So you can say "I use Arch by the way."
+
+- `Hyprland`: Tiling window manager for wayland
 
 - `git`: For cloning this repository
 
 ```sh
-sudo pacman -Syu git
+sudo pacman -S git
 ```
 
 ---
@@ -39,8 +41,8 @@ sudo pacman -Syu git
 3. execute `master.sh` script
 
 ```sh
-git clone https://github.com/unemotioned/bootstrap.git
-cd ~/bootstrap
+git clone https://github.com/unemotioned/bootstrap.git ~/personal/bootstrap
+cd ~/personal/bootstrap/
 ./master.sh
 ```
 
