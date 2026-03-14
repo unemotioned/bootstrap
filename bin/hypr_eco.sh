@@ -10,7 +10,6 @@ install=(
   hyprlock
   hyprpaper
   hyprpicker
-  hyprshot
   satty
   waybar
   wl-clipboard
