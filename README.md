@@ -82,9 +82,6 @@ Packages that can be installed with `pacman`
 - jdk17-openjdk
 - keyd
 - lazygit
-- linux-firmware
-- linux-lts
-- linux-lts-headers
 - lsof
 - man-db
 - man-pages
@@ -114,6 +111,9 @@ Packages that can be installed with `pacman`
 - unzip
 - waybar
 - wl-clipboard
+- xdg-desktop-portal
+- xdg-desktop-portal-gtk
+- xdg-desktop-portal-hyprland
 - yarn
 - yazi(dependencies: ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick)
 - zoxide
@@ -127,6 +127,7 @@ Packages that can only be installed from `AUR` repository
 
 - adobe-source-han-sans-kr-fonts
 - adobe-source-han-serif-kr-fonts
+- catppuccin-gtk-theme-mocha
 - cliphist
 - localsend-bin
 - oh-my-zsh-git
