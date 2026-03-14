@@ -27,6 +27,7 @@ USER='unemotioned'
 . ./bin/clone_dotfiles.sh
 . ./bin/clone_repos.sh
 . ./bin/zoxide_add.sh
+. ./bin/install_opencode.sh
 . ./bin/install_tmux.sh
 . ./bin/install_chafa.sh
 . ./bin/bt_setup.sh

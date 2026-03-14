@@ -8,7 +8,6 @@ install=(
   discord
   foot
   localsend-bin
-  opencode
   vscodium-bin
 )
 
