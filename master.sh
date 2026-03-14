@@ -15,6 +15,7 @@ USER='unemotioned'
 . ./bin/install_fcitx.sh
 . ./bin/install_keyd.sh
 . ./bin/hypr_eco.sh
+. ./bin/fix_kitty.sh
 . ./bin/install_lang.sh
 . ./bin/term_env.sh
 . ./bin/install_yazi.sh
