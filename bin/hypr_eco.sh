@@ -8,6 +8,7 @@ install=(
   cliphist
   hypridle
   hyprlock
+  hyprmon
   hyprpaper
   hyprpicker
   satty
