@@ -3,15 +3,15 @@ set -euo pipefail
 
 sudo pacman -S --noconfirm --needed keyd
 
-DIR='/etc/keyd'
-DEF="$DIR/default.conf"
-KBD="$DIR/kbd.conf"
-BALL="$DIR/ball.conf"
+dir='/etc/keyd'
+def="$dir/default.conf"
+kbd="$dir/kbd.conf"
+ball="$dir/ball.conf"
 
-sudo mkdir -p "$DIR"
+sudo mkdir -p "$dir"
 
-if [ ! -f "$DEF" ]; then
-  sudo tee "$DEF" <<EOF
+if [ ! -f "$def" ]; then
+  sudo tee "$def" <<EOF
 [ids]
 
 *
@@ -22,8 +22,8 @@ rightalt = f16
 EOF
 fi
 
-if [ ! -f "$KBD" ]; then
-  sudo tee "$KBD" <<EOF
+if [ ! -f "$kbd" ]; then
+  sudo tee "$kbd" <<EOF
 [ids]
 
 # AT Translated Set 2 keyboard
@@ -37,8 +37,8 @@ esc = capslock
 EOF
 fi
 
-if [ ! -f "$BALL" ]; then
-  sudo tee "$BALL" <<EOF
+if [ ! -f "$ball" ]; then
+  sudo tee "$ball" <<EOF
 [ids]
 
 # splitkb.com Aurora Sofle v2 rev1

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-HEHE_KITTY="$EXE_PATH/archive/hehe_kitty.png"
+hehe_kitty="$EXE_PATH/archive/hehe_kitty.png"
 
 clear -x
 
@@ -9,7 +9,7 @@ echo '======================================================'
 echo 'Installation and configuration completed successfully.'
 echo '======================================================'
 
-[ -f "$HEHE_KITTY" ] && chafa "$HEHE_KITTY"
+[ -f "$hehe_kitty" ] && chafa "$hehe_kitty"
 
 read -rp 'Reboot now? [Y/n]: ' answer
 

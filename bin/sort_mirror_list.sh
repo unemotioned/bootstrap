@@ -3,13 +3,13 @@ set -euo pipefail
 
 sudo pacman -S --noconfirm --needed reflector
 
-LIST='/etc/pacman.d/mirrorlist'
+m_list='/etc/pacman.d/mirrorlist'
 
 read -rp 'Sort mirror list? [Y/n]: ' answer
 
 if [[ "${answer,,}" == 'y' || -z "${answer}" ]]; then
   # sort 10 fastest servers
-  sudo reflector --verbose --latest 10 --protocol https --sort rate --save "$LIST"
+  sudo reflector --verbose --latest 10 --protocol https --sort rate --save "$m_list"
   # update pacman
   sudo pacman -Syu --noconfirm
 elif [[ "${answer,,}" == 'n' ]]; then

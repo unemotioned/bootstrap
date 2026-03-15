@@ -14,7 +14,7 @@ clone_repo() {
     echo "$repo already cloned, skipping"
   else
     echo "Cloning $repo into $dest..."
-    gh repo clone "$USER/$repo" "$target"
+    gh repo clone "$NAME/$repo" "$target"
   fi
 
   if git -C "$target" show-ref --verify --quiet refs/heads/dev; then
@@ -25,15 +25,15 @@ clone_repo() {
   fi
 }
 
-# ~/dev
-clone_repo "$HOME/dev" student-grader
-clone_repo "$HOME/dev" english-test
-clone_repo "$HOME/dev" guessing-game.rs
+dev="$HOME/dev"
+clone_repo "$dev" student-grader
+clone_repo "$dev" english-test
+clone_repo "$dev" guessing-game.rs
 
-# ~/personal
-clone_repo "$HOME/personal" bootstrap
-clone_repo "$HOME/personal" tistory
+personal="$HOME/personal"
+clone_repo "$personal" bootstrap
+clone_repo "$personal" tistory
 
-# ~/repo
-clone_repo "$HOME/repo" tmux-tokyo-night
-clone_repo "$HOME/repo" tokyonight.nvim
+dev="$HOME/repo"
+clone_repo "$repo" tmux-tokyo-night
+clone_repo "$repo" tokyonight.nvim

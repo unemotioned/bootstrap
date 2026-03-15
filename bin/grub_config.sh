@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-GRUB="/etc/default/grub"
+grub="/etc/default/grub"
 
-GRUB_OPTIONS=(
+grub_options=(
   "GRUB_DEFAULT=saved"
   "GRUB_GFXMODE=640x480"
   "GRUB_DISABLE_LINUX_UUID=true"
@@ -13,12 +13,12 @@ GRUB_OPTIONS=(
   "GRUB_DISABLE_OS_PROBER=false"
 )
 
-for opt in "${GRUB_OPTIONS[@]}"; do
+for opt in "${grub_options[@]}"; do
   key="${opt%%=*}"
-  if grep -qE "^#?${key}=" "$GRUB"; then
-    sudo sed -Ei "s/^#?${key}=.*/${opt}/" "$GRUB"
+  if grep -qE "^#?${key}=" "$grub"; then
+    sudo sed -Ei "s/^#?${key}=.*/${opt}/" "$grub"
   else
-    echo "$opt" | sudo tee -a "$GRUB" >/dev/null
+    echo "$opt" | sudo tee -a "$grub" >/dev/null
   fi
 done
 

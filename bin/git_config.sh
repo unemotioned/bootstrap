@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-git config --global user.name "$USER"
+git config --global user.NAME "$name"
 
 if [ -z "$(git config --global user.email)" ]; then
   read -rp 'Git user email: ' git_email

@@ -11,11 +11,11 @@ install=(
 
 install_pkgs install
 
-STATUS="$(powerprofilesctl get)"
+status="$(powerprofilesctl get)"
 
-MODE='performance' # power-saver | balanced | performance
+mode='performance' # power-saver | balanced | performance
 
-if [ ! "$STATUS" = "$MODE" ]; then
-  powerprofilesctl set "$MODE"
+if [ ! "$status" = "$mode" ]; then
+  powerprofilesctl set "$mode"
   echo 'power-profiles-daemon is now set to "Performance" mode'
 fi

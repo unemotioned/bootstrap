@@ -3,14 +3,14 @@ set -euo pipefail
 
 sudo pacman -S --noconfirm --needed stow github-cli
 
-REPO='dotfiles'
-DIR="$HOME/$REPO"
+repo='dotfiles'
+dir="$HOME/$repo"
 
-if [ ! -d "$DIR" ]; then
-  gh repo clone "$USER"/"$REPO" "$DIR"
+if [ ! -d "$dir" ]; then
+  gh repo clone "$NAME"/"$repo" "$dir"
 fi
 
-cd "$DIR"
+cd "$dir"
 
 rm -rf ~/.config/hypr
 rm -rf ~/.config/kitty

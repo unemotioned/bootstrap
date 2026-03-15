@@ -2,7 +2,7 @@
 set -euo pipefail
 
 EXE_PATH="$(pwd)"
-USER='unemotioned'
+NAME='unemotioned'
 
 . ./bin/powerprofile.sh
 . ./bin/pacman_config.sh

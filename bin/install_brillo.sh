@@ -8,24 +8,24 @@ fi
 
 sudo pacman -S --noconfirm --needed go-md2man
 
-REPO="$HOME/repo"
-BRLL="$REPO/brillo"
+repo="$HOME/repo"
+brll="$repo/brillo"
 
-mkdir -p "$REPO"
-cd "$REPO"
+mkdir -p "$repo"
+cd "$repo"
 
-if [ -d "$BRLL" ]; then
+if [ -d "$brll" ]; then
   echo "brillo already cloned"
 else
-  git clone https://gitlab.com/cameronnemo/brillo.git "$BRLL"
+  git clone https://gitlab.com/cameronnemo/brillo.git "$brll"
 fi
 
-cd "$BRLL"
+cd "$brll"
 sudo make install.setgid
 
-BCTL='brightnessctl'
-if pacman -Qi "$BCTL" &>/dev/null; then
-  sudo pacman -Rns --noconfirm "$BCTL"
+bctl='brightnessctl'
+if pacman -Qi "$bctl" &>/dev/null; then
+  sudo pacman -Rns --noconfirm "$bctl"
 fi
 
 cd "$EXE_PATH"

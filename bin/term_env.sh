@@ -27,11 +27,11 @@ install=(
 
 install_pkgs install
 
-ZSH_PATH=$(which zsh)
+zsh_path=$(which zsh)
 
-if [ "$SHELL" = "$ZSH_PATH" ]; then
+if [ "$SHELL" = "$zsh_path" ]; then
   echo 'ZSH is already default shell.'
 else
-  chsh -s "$ZSH_PATH"
+  chsh -s "$zsh_path"
   echo 'Default shell changed to ZSH.'
 fi
