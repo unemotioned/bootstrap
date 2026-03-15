@@ -1,27 +1,31 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+mkdir -p\
+  ~/Documents\
+  ~/Downloads\
+  ~/playground
+
 dirs=(
   dotfiles
   .config
-  .config/foot
   .config/hypr
   .config/kitty
-  .config/lazygit
   .config/nvim
-  .config/waybar
-  .config/wlogout
-  .config/wofi
-  .config/yazi
+  .local
   .local/scripts
   personal
   personal/bootstrap
   personal/tistory
+  Pictures
   Pictures/Wallpapers
   Pictures/Screenshots
   repo
   repo/tmux-tokyo-night
   repo/tokyonight.nvim
+  Documents
+  Downloads
+  playground
 )
 
 for dir in "${dirs[@]}"; do
