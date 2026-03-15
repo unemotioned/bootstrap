@@ -9,11 +9,19 @@ install=(
   adobe-source-han-serif-kr-fonts
   noto-fonts-cjk
   noto-fonts-emoji
-  otf-font-awesome
   ttf-iosevka-nerd
   ttf-jetbrains-mono-nerd
 )
 
 install_pkgs install
 
-fc-cache -v
+dir="$HOME/.local/share/fonts"
+zip='GoogleSansFlex.zip'
+url="https://fonts.google.com/download?family=Google+Sans+Flex"
+
+mkdir -p "$dir"
+wget -O "$dir/$zip" "$url"
+unzip "$dir/$zip" -d "$dir"
+rm "$dir/$zip"
+
+fc-cache -fv

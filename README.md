@@ -96,7 +96,6 @@ Packages that can be installed with `pacman`
 - npm
 - opencode
 - os-prober
-- otf-font-awesome
 - pacman-contrib
 - pavucontrol
 - pipewire-audio
