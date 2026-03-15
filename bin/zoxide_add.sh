@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-mkdir -p\
-  ~/Documents\
-  ~/Downloads\
-  ~/playground
+# standardize directories
+xdg-user-dirs-update
+
+mkdir -p ~/playground
 
 dirs=(
   dotfiles
