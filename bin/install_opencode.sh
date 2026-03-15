@@ -10,7 +10,8 @@ if ! command -v opencode &>/dev/null; then
   export PATH="$HOME/.opencode/bin:$PATH"
 fi
 
-# auth login if not 0 credentials exists
-if opencode providers list | grep -q "0 credentials"; then
+# auth login if no credentials exist
+cred=$(opencode providers list | grep credentials | awk '{print $2}')
+if [ "$cred" = "0" ]; then
   opencode auth login
 fi
