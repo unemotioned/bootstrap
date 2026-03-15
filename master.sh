@@ -30,6 +30,7 @@ NAME='unemotioned'
 . ./bin/zoxide_add.sh
 . ./bin/install_opencode.sh
 . ./bin/install_tmux.sh
+. ./bin/install_mariadb.sh
 . ./bin/install_chafa.sh
 . ./bin/bt_setup.sh
 . ./bin/network_setup.sh
