@@ -104,7 +104,6 @@ Packages that can be installed with `pacman`
 - power-profiles-daemon
 - python-gobject
 - reflector
-- rofimoji
 - rustup
 - satty
 - sof-firmware
