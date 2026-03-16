@@ -134,6 +134,8 @@ Packages that can only be installed from `AUR` repository
 - catppuccin-gtk-theme-mocha
 - cliphist
 - localsend-bin
+- mongodb-bin
+- mongosh-bin
 - oh-my-zsh-git
 - pfetch-rs-bin
 - vscodium-bin
