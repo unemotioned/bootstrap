@@ -12,6 +12,7 @@ install=(
   hyprpaper
   hyprpicker
   libqalculate
+  hyprshot
   satty
   waybar
   wl-clipboard

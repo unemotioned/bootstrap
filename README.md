@@ -80,6 +80,7 @@ Packages that can be installed with `pacman`
 - hyprmon
 - hyprpaper
 - hyprpicker
+- hyprshot
 - impala
 - jdk17-openjdk
 - keyd
