@@ -8,7 +8,7 @@ install=(
   base-devel
   lsof
   neovim
-  nodejs
+  nodejs-lts-krypton
   noto-fonts-emoji
   npm
   pnpm

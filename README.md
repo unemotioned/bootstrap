@@ -91,6 +91,7 @@ Packages that can be installed with `pacman`
 - nautilus
 - neovim
 - node
+- nodejs-lts-krypton
 - noto-fonts-cjk
 - noto-fonts-emoji
 - npm
