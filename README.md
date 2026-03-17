@@ -62,6 +62,7 @@ Packages that can be installed with `pacman`
 - bluetui
 - bluez
 - bolt
+- btop
 - chromium
 - dhcpcd
 - discord
@@ -77,7 +78,6 @@ Packages that can be installed with `pacman`
 - go-md2man
 - hypridle
 - hyprlock
-- hyprmon
 - hyprpaper
 - hyprpicker
 - hyprshot

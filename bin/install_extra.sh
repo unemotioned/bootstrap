@@ -8,6 +8,7 @@ install=(
   chromium
   discord
   foot
+  btop
   localsend-bin
   vscodium-bin
 )

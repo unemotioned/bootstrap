@@ -8,7 +8,6 @@ install=(
   cliphist
   hypridle
   hyprlock
-  hyprmon
   hyprpaper
   hyprpicker
   hyprshot
