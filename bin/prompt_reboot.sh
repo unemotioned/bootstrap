@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-hehe_kitty="$EXE_PATH/archive/hehe_kitty.png"
+hehe_kitty="$EXE_PATH/asset/chafa/hehe_kitty.png"
 
 clear -x
 
