@@ -26,6 +26,7 @@ stow --restow icon
 stow --restow kitty
 stow --restow lazygit
 stow --restow nvim
+stow --restow satty
 stow --restow sessionizer
 stow --restow tmux
 stow --restow wallpaper
