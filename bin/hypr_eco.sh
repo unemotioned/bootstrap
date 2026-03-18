@@ -14,6 +14,7 @@ install=(
   libqalculate
   nwg-clipman
   satty
+  snappy-switcher
   waybar
   wl-clip-persist
   wl-clipboard
@@ -21,3 +22,7 @@ install=(
 )
 
 install_pkgs install
+
+if command -v snappy-switcher; then
+  snappy-install-config
+fi

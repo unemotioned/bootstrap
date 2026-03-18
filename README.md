@@ -144,6 +144,7 @@ Packages that can only be installed from `AUR` repository
 - starship
 - vscodium-bin
 - wlogout
+- snappy-switcher
 - zsh-fast-syntax-highlighting
 - zsh-theme-powerlevel10k
 
