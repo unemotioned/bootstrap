@@ -3,11 +3,10 @@ set -euo pipefail
 
 sudo pacman -S --noconfirm --needed stow github-cli
 
-repo='dotfiles'
-dir="$HOME/$repo"
+dir="$HOME/dotfiles"
 
 if [ ! -d "$dir" ]; then
-  gh repo clone "$NAME"/"$repo" "$dir"
+  git clone https://github.com/unemotioned/dotfiles.git
 fi
 
 cd "$dir"
@@ -31,7 +30,7 @@ stow --restow satty
 stow --restow sessionizer
 stow --restow starship
 stow --restow tmux
-stow --restow wallpaper
+stow --restow wallpapers
 stow --restow waybar
 stow --restow wlogout
 stow --restow wofi
