@@ -19,6 +19,7 @@ mkdir -p ~/Pictures/Screenshots
 
 stow --restow --adopt applications
 stow --restow bat
+stow --restow btop
 stow --restow fish
 stow --restow foot
 stow --restow hypr
