@@ -17,7 +17,9 @@ NAME='unemotioned'
 . ./bin/hypr_eco.sh
 . ./bin/desktop_portal.sh
 . ./bin/install_lang.sh
-. ./bin/term_env.sh
+. ./bin/install_cli_tools.sh
+# . ./bin/install_zsh.sh
+. ./bin/install_fish.sh
 . ./bin/install_yazi.sh
 . ./bin/install_nvim.sh
 . ./bin/install_fonts.sh

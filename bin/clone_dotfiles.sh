@@ -34,7 +34,8 @@ stow --restow waybar
 stow --restow wlogout
 stow --restow wofi
 stow --restow yazi
-stow --restow zsh-arch
+# stow --restow zsh-arch
+stow --restow fish
 
 rm -rf ~/.cache/bat
 bat cache --build

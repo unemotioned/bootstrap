@@ -5,19 +5,7 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  bat
-  eza
-  fd
-  fzf
-  git
-  git-delta
-  github-cli
-  lazygit
-  man-db
-  man-pages
   oh-my-zsh-git
-  pfetch-rs-bin
-  zoxide
   zsh
   zsh-autosuggestions
   zsh-fast-syntax-highlighting
@@ -35,3 +23,5 @@ else
   chsh -s "$zsh_path"
   echo 'Default shell changed to ZSH.'
 fi
+
+export SHELL="$zsh_path"
