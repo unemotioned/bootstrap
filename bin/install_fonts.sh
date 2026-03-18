@@ -16,12 +16,11 @@ install=(
 install_pkgs install
 
 dir="$HOME/.local/share/fonts"
-zip='GoogleSansFlex.zip'
-url="https://fonts.google.com/download?family=Google+Sans+Flex"
+zip="Google_Sans_Flex.zip"
 
 mkdir -p "$dir"
-wget -O "$dir/$zip" "$url"
-unzip "$dir/$zip" -d "$dir"
+cp "$EXE_PATH"/asset/fonts/Google_Sans_Flex.zip "$dir"
+unzip "$dir/$zip" -d "$dir"/GoogleSansFlex
 rm "$dir/$zip"
 
 fc-cache -fv
