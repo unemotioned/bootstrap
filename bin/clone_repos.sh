@@ -34,6 +34,6 @@ personal="$HOME/personal"
 clone_repo "$personal" bootstrap
 clone_repo "$personal" tistory
 
-dev="$HOME/repo"
+repo="$HOME/repo"
 clone_repo "$repo" tmux-tokyo-night
 clone_repo "$repo" tokyonight.nvim
