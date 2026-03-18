@@ -33,7 +33,6 @@ NAME='unemotioned'
 . ./bin/install_opencode.sh
 . ./bin/install_tmux.sh
 . ./bin/install_db.sh
-. ./bin/install_chafa.sh
 . ./bin/bt_setup.sh
 . ./bin/network_setup.sh
 . ./bin/remove_bash_files.sh
