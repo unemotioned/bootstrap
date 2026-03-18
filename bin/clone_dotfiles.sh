@@ -6,7 +6,7 @@ sudo pacman -S --noconfirm --needed stow github-cli
 dir="$HOME/dotfiles"
 
 if [ ! -d "$dir" ]; then
-  git clone https://github.com/unemotioned/dotfiles.git
+  git clone https://github.com/unemotioned/dotfiles.git "$dir"
 fi
 
 cd "$dir"

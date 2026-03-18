@@ -25,7 +25,7 @@ clone_repo() {
   fi
 }
 
-clone_repo dotfiles dotfiles
+clone_repo "$HOME" dotfiles
 
 dev="$HOME/dev"
 clone_repo "$dev" dsa
