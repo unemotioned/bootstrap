@@ -20,6 +20,7 @@ mkdir -p ~/Pictures/Screenshots
 
 stow --restow --adopt applications
 stow --restow bat
+stow --restow fish
 stow --restow foot
 stow --restow hypr
 stow --restow icon
@@ -28,6 +29,7 @@ stow --restow lazygit
 stow --restow nvim
 stow --restow satty
 stow --restow sessionizer
+stow --restow starship
 stow --restow tmux
 stow --restow wallpaper
 stow --restow waybar
@@ -35,7 +37,6 @@ stow --restow wlogout
 stow --restow wofi
 stow --restow yazi
 # stow --restow zsh-arch
-stow --restow fish
 
 rm -rf ~/.cache/bat
 bat cache --build
