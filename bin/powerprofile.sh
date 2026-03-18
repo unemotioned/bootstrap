@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-. "$EXE_PATH"/src/lib.sh
-
-# shellcheck disable=SC2034
-install=(
-  power-profiles-daemon
+sudo pacman -S --noconfirm --needed\
+  power-profiles-daemon\
   python-gobject
-)
-
-install_pkgs install
 
 status="$(powerprofilesctl get)"
 
