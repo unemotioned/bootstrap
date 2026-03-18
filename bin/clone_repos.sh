@@ -25,6 +25,8 @@ clone_repo() {
   fi
 }
 
+clone_repo dotfiles dotfiles
+
 dev="$HOME/dev"
 clone_repo "$dev" student-grader
 clone_repo "$dev" english-test
