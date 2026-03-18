@@ -96,6 +96,7 @@ Packages that can be installed with `pacman`
 - noto-fonts-cjk
 - noto-fonts-emoji
 - npm
+- nwg-clipman
 - opencode
 - os-prober
 - pacman-contrib
@@ -114,6 +115,7 @@ Packages that can be installed with `pacman`
 - ttf-jetbrains-mono-nerd
 - unzip
 - waybar
+- wl-clip-persist
 - wl-clipboard
 - xdg-desktop-portal
 - xdg-desktop-portal-gtk
@@ -133,11 +135,13 @@ Packages that can only be installed from `AUR` repository
 - adobe-source-han-serif-kr-fonts
 - catppuccin-gtk-theme-mocha
 - cliphist
+- fish
 - localsend-bin
 - mongodb-bin
 - mongosh-bin
 - oh-my-zsh-git
 - pfetch-rs-bin
+- starship
 - vscodium-bin
 - wlogout
 - zsh-fast-syntax-highlighting
@@ -148,3 +152,4 @@ Packages that can only be installed from `AUR` repository
 - brillo
 - tpm
 - yay
+- Google Sans Flex
