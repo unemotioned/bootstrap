@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-if command -v chafa &>/dev/null; then
+if ! command -v chafa &>/dev/null; then
   sudo pacman -S --noconfirm chafa
 fi
 
