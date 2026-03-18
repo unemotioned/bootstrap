@@ -12,6 +12,6 @@ install=(
 
 install_pkgs install
 
-systemctl --user start xdg-desktop-portal
-systemctl --user start xdg-desktop-portal-gtk
-systemctl --user start xdg-desktop-portal-hyprland
+systemctl --user enable xdg-desktop-portal
+systemctl --user enable xdg-desktop-portal-gtk
+systemctl --user enable xdg-desktop-portal-hyprland
