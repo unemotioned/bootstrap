@@ -25,5 +25,5 @@ if [ ! -f "$ball" ]; then
 fi
 
 if ! systemctl is-active --quiet keyd; then
-  sudo systemctl enable --now keyd
+  sudo systemctl enable keyd
 fi

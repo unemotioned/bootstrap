@@ -16,4 +16,4 @@ install=(
 
 install_pkgs install
 
-systemctl --user enable --now pipewire pipewire-pulse wireplumber
+systemctl enable pipewire pipewire-pulse wireplumber
