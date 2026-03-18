@@ -28,9 +28,10 @@ clone_repo() {
 clone_repo dotfiles dotfiles
 
 dev="$HOME/dev"
-clone_repo "$dev" student-grader
+clone_repo "$dev" dsa
 clone_repo "$dev" english-test
 clone_repo "$dev" guessing-game.rs
+clone_repo "$dev" student-grader
 
 personal="$HOME/personal"
 clone_repo "$personal" bootstrap
