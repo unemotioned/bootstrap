@@ -8,8 +8,8 @@ if [ -f /etc/xdg/autostart/nm-applet.desktop ]; then
   sudo sh -c 'echo "Hidden=true" >> /etc/xdg/autostart/nm-applet.desktop'
 fi
 
-sudo systemctl disable --now NetworkManager
-sudo systemctl enable --now iwd dhcpcd
+sudo systemctl disable NetworkManager
+sudo systemctl enable iwd dhcpcd
 
 if ! ping -c 1 -W 1 8.8.8.8 &>/dev/null; then
   read -r -p "Wi-Fi SSID: " ssid
