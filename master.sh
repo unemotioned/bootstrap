@@ -28,6 +28,7 @@ NAME='unemotioned'
 . ./bin/git_config.sh
 . ./bin/gh_setup.sh
 . ./bin/clone_dotfiles.sh
+. ./bin/start_nvim.sh
 . ./bin/clone_repos.sh
 . ./bin/zoxide_add.sh
 . ./bin/install_opencode.sh
