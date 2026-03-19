@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sudo pacman -S --noconfirm --needed\
-  power-profiles-daemon\
-  python-gobject
+sudo pacman -S --noconfirm --needed power-profiles-daemon python-gobject
+
+if ! systemctl is-enabled --quiet power-profiles-daemon; then
+  sudo systemctl enable --now power-profiles-daemon
+fi
 
 status="$(powerprofilesctl get)"
 
