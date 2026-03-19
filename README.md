@@ -72,6 +72,7 @@ Packages that can be installed with `pacman`
 - fcitx5-im
 - foot
 - fastfetch
+- fprintd
 - fzf
 - git
 - git-delta

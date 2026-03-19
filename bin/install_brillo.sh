@@ -17,15 +17,14 @@ cd "$repo"
 if [ -d "$brll" ]; then
   echo "brillo already cloned"
 else
-  git clone https://gitlab.com/cameronnemo/brillo.git "$brll"
+  git clone https://gitlab.com/cameronnemo/brillo.git
 fi
 
 cd "$brll"
 sudo make install.setgid
 
-bctl='brightnessctl'
-if pacman -Qi "$bctl" &>/dev/null; then
-  sudo pacman -Rns --noconfirm "$bctl"
+if pacman -Qi brightnessctl &>/dev/null; then
+  sudo pacman -Rns --noconfirm brightnessctl
 fi
 
 cd "$EXE_PATH"

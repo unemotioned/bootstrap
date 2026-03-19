@@ -7,26 +7,30 @@ xdg-user-dirs-update
 mkdir -p ~/playground
 
 dirs=(
-  dotfiles
   .config
+  .config/fish
+  .config/foot
   .config/hypr
   .config/kitty
   .config/nvim
+  .config/starship
+  .config/waybar
   .config/fastfetch
   .local
   .local/scripts
+  Documents
+  Downloads
+  Pictures
+  Pictures/Screenshots
+  Pictures/Wallpapers
+  dotfiles
   personal
   personal/bootstrap
   personal/tistory
-  Pictures
-  Pictures/Wallpapers
-  Pictures/Screenshots
+  playground
   repo
   repo/tmux-tokyo-night
   repo/tokyonight.nvim
-  Documents
-  Downloads
-  playground
 )
 
 for dir in "${dirs[@]}"; do

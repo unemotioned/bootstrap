@@ -4,23 +4,23 @@ set -euo pipefail
 sudo pacman -S --noconfirm --needed keyd
 
 dir='/etc/keyd'
-def="$dir/all.conf"
-kbd="$dir/builtin.conf"
-ball="$dir/trackball.conf"
+all="$dir/all.conf"
+builtin="$dir/builtin.conf"
+trackball="$dir/trackball.conf"
 
 asset="$EXE_PATH/asset/keyd"
 
 sudo mkdir -p "$dir"
 
-if [ ! -f "$def" ]; then
+if [ ! -f "$all" ]; then
   sudo cp "$asset/all.conf" "$dir"
 fi
 
-if [ ! -f "$kbd" ]; then
+if [ ! -f "$builtin" ]; then
   sudo cp "$asset/builtin.conf" "$dir"
 fi
 
-if [ ! -f "$ball" ]; then
+if [ ! -f "$trackball" ]; then
   sudo cp "$asset/trackball.conf" "$dir"
 fi
 
