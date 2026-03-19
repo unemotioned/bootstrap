@@ -7,6 +7,7 @@ set -euo pipefail
 install=(
   bat
   eza
+  fastfetch
   fd
   fzf
   git
@@ -15,7 +16,6 @@ install=(
   lazygit
   man-db
   man-pages
-  pfetch-rs-bin
   zoxide
 )
 

@@ -71,6 +71,7 @@ Packages that can be installed with `pacman`
 - fcitx5-hangul
 - fcitx5-im
 - foot
+- fastfetch
 - fzf
 - git
 - git-delta
@@ -140,7 +141,6 @@ Packages that can only be installed from `AUR` repository
 - mongodb-bin
 - mongosh-bin
 - oh-my-zsh-git
-- pfetch-rs-bin
 - starship
 - vscodium-bin
 - wlogout

@@ -12,6 +12,7 @@ dirs=(
   .config/hypr
   .config/kitty
   .config/nvim
+  .config/fastfetch
   .local
   .local/scripts
   personal
