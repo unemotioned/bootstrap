@@ -99,7 +99,6 @@ Packages that can be installed with `pacman`
 - noto-fonts-emoji
 - npm
 - nwg-clipman
-- opencode
 - os-prober
 - pacman-contrib
 - pavucontrol
@@ -142,10 +141,11 @@ Packages that can only be installed from `AUR` repository
 - mongodb-bin
 - mongosh-bin
 - oh-my-zsh-git
+- opencode-bin
+- snappy-switcher
 - starship
 - vscodium-bin
 - wlogout
-- snappy-switcher
 - zsh-fast-syntax-highlighting
 - zsh-theme-powerlevel10k
 

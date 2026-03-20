@@ -3,7 +3,7 @@ set -euo pipefail
 
 # opencode: AI agent
 # lsof: opencode.nvim dependency
-sudo pacman -S --noconfirm --needed opencode lsof
+yay -S --noconfirm --needed opencode-bin lsof
 
 # add path if binary is not found
 if ! command -v opencode &>/dev/null; then
