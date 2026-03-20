@@ -7,3 +7,5 @@ if [ ${#orphans[@]} -gt 0 ]; then
 else
   echo 'No orphaned packages found.'
 fi
+
+yay -Scc --noconfirm
