@@ -9,7 +9,6 @@ install=(
   zsh
   zsh-autosuggestions
   zsh-fast-syntax-highlighting
-  zsh-history-substring-search
   zsh-theme-powerlevel10k
 )
 
