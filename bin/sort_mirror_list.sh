@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sudo pacman -S --noconfirm --needed reflector
+if ! command -v reflector &>/dev/null; then
+  sudo pacman -S --noconfirm reflector
+fi
 
 mirror='/etc/pacman.d/mirrorlist'
 
