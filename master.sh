@@ -35,8 +35,8 @@ NAME='unemotioned'
 . ./bin/install_tmux.sh
 . ./bin/install_db.sh
 . ./bin/fprint_setup.sh
-. ./bin/bt_setup.sh
 . ./bin/network_setup.sh
+. ./bin/bluetooth_setup.sh
 . ./bin/remove_bash_files.sh
 . ./bin/remove_orphaned.sh
 
