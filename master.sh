@@ -4,40 +4,40 @@ set -euo pipefail
 EXE_PATH="$(pwd)"
 NAME='unemotioned'
 
-. ./bin/powerprofile.sh
-. ./bin/pacman_config.sh
-. ./bin/grub_config.sh
-. ./bin/sort_mirror_list.sh
-. ./bin/install_yay.sh
-. ./bin/paccache.sh
-. ./bin/install_brillo.sh
-. ./bin/audio_setup.sh
-. ./bin/install_fcitx.sh
-. ./bin/install_keyd.sh
-. ./bin/hypr_eco.sh
-. ./bin/desktop_portal.sh
-. ./bin/install_lang.sh
-. ./bin/install_cli_tools.sh
-# . ./bin/install_zsh.sh
-. ./bin/install_fish.sh
-. ./bin/install_yazi.sh
-. ./bin/install_nvim.sh
-. ./bin/install_fonts.sh
-. ./bin/install_nautilus.sh
-. ./bin/install_extra.sh
-. ./bin/git_config.sh
-. ./bin/gh_setup.sh
-. ./bin/clone_dotfiles.sh
-. ./bin/start_nvim.sh
-. ./bin/clone_repos.sh
-. ./bin/zoxide_add.sh
-. ./bin/install_opencode.sh
-. ./bin/install_tmux.sh
-. ./bin/install_db.sh
-. ./bin/fprint_setup.sh
-. ./bin/network_setup.sh
-. ./bin/bluetooth_setup.sh
-. ./bin/remove_bash_files.sh
-. ./bin/remove_orphaned.sh
+. ./src/powerprofile.sh
+. ./src/pacman_config.sh
+. ./src/grub_config.sh
+. ./src/sort_mirror_list.sh
+. ./src/install_yay.sh
+. ./src/paccache.sh
+. ./src/install_brillo.sh
+. ./src/audio_setup.sh
+. ./src/install_fcitx.sh
+. ./src/install_keyd.sh
+. ./src/hypr_eco.sh
+. ./src/desktop_portal.sh
+. ./src/install_lang.sh
+. ./src/install_cli_tools.sh
+# . ./src/install_zsh.sh
+. ./src/install_fish.sh
+. ./src/install_yazi.sh
+. ./src/install_nvim.sh
+. ./src/install_fonts.sh
+. ./src/install_nautilus.sh
+. ./src/install_extra.sh
+. ./src/git_config.sh
+. ./src/gh_setup.sh
+. ./src/clone_dotfiles.sh
+. ./src/start_nvim.sh
+. ./src/clone_repos.sh
+. ./src/zoxide_add.sh
+. ./src/install_opencode.sh
+. ./src/install_tmux.sh
+. ./src/install_db.sh
+. ./src/fprint_setup.sh
+. ./src/network_setup.sh
+. ./src/bluetooth_setup.sh
+. ./src/remove_bash_files.sh
+. ./src/remove_orphaned.sh
 
-. ./bin/prompt_reboot.sh
+. ./src/prompt_reboot.sh

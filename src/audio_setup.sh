@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-. "$EXE_PATH"/src/lib.sh
+. "$EXE_PATH"/src/utils/lib.sh
 
 # TODO: move bolt to somewhere else
 
