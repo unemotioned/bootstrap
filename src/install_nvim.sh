@@ -12,6 +12,7 @@ install=(
   noto-fonts-emoji
   npm
   pnpm
+  tree-sitter-cli
   unzip
   wl-clipboard
   yarn
