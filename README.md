@@ -142,7 +142,6 @@ Packages that can only be installed from `AUR` repository
 - mongosh-bin
 - oh-my-zsh-git
 - opencode-bin
-- snappy-switcher
 - starship
 - vscodium-bin
 - wlogout
