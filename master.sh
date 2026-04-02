@@ -15,6 +15,7 @@ NAME='unemotioned'
 . ./src/install_fcitx.sh
 . ./src/install_keyd.sh
 . ./src/hypr_eco.sh
+. ./src/walker.sh
 . ./src/desktop_portal.sh
 . ./src/install_lang.sh
 . ./src/install_cli_tools.sh
