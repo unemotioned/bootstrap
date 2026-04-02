@@ -5,17 +5,13 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  cliphist
   hypridle
   hyprlock
   hyprpaper
   hyprpicker
   hyprshot
-  libqalculate
-  nwg-clipman
-  satty
+  satty # screenshot annotation tool
   waybar
-  wl-clip-persist
   wl-clipboard
   wlogout
 )

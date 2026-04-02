@@ -88,7 +88,6 @@ Packages that can be installed with `pacman`
 - jdk17-openjdk
 - keyd
 - lazygit
-- libqalculate
 - lsof
 - man-db
 - man-pages
@@ -99,7 +98,6 @@ Packages that can be installed with `pacman`
 - noto-fonts-cjk
 - noto-fonts-emoji
 - npm
-- nwg-clipman
 - os-prober
 - pacman-contrib
 - pavucontrol
@@ -117,7 +115,6 @@ Packages that can be installed with `pacman`
 - ttf-jetbrains-mono-nerd
 - unzip
 - waybar
-- wl-clip-persist
 - wl-clipboard
 - xdg-desktop-portal
 - xdg-desktop-portal-gtk
@@ -136,7 +133,6 @@ Packages that can only be installed from `AUR` repository
 - adobe-source-han-sans-kr-fonts
 - adobe-source-han-serif-kr-fonts
 - catppuccin-gtk-theme-mocha
-- cliphist
 - fish
 - localsend-bin
 - mongodb-bin
