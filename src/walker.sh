@@ -10,10 +10,8 @@ install=(
   elephant-bluetooth
   elephant-calc
   elephant-clipboard
-  elephant-runner
   elephant-symbols
   elephant-websearch
-  elephant-windows
 )
 
 install_pkgs install
