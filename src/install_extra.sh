@@ -5,10 +5,11 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
+  btop
   chromium
   discord
   foot
-  btop
+  gnome-clocks
   localsend-bin
   vscodium-bin
 )

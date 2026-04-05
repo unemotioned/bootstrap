@@ -77,6 +77,7 @@ Packages that can be installed with `pacman`
 - git
 - git-delta
 - github-cli
+- gnome-clocks
 - go
 - go-md2man
 - hypridle
