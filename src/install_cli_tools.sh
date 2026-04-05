@@ -16,6 +16,8 @@ install=(
   lazygit
   man-db
   man-pages
+  tealdeer
+  wikiman
   zoxide
 )
 
