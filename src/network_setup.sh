@@ -9,7 +9,11 @@ if [ -f /etc/xdg/autostart/nm-applet.desktop ]; then
 fi
 
 sudo systemctl disable NetworkManager
-sudo systemctl enable iwd dhcpcd
+sudo systemctl enable iwd
+
+iwd_dir='/etc/iwd'
+sudo mkdir -p "$iwd_dir"
+sudo cp "$EXE_PATH/asset/iwd/main.conf" "$iwd_dir"
 
 if ! ping -c 1 -W 1 8.8.8.8 &>/dev/null; then
   read -r -p "Wi-Fi SSID: " ssid
