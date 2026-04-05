@@ -24,7 +24,7 @@ stow --restow fastfetch
 stow --restow fish
 stow --restow foot
 stow --restow hypr
-stow --restow icon
+stow --restow icons
 stow --restow kitty
 stow --restow lazygit
 stow --restow nvim
