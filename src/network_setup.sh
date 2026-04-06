@@ -11,9 +11,15 @@ fi
 sudo systemctl disable NetworkManager
 sudo systemctl enable iwd
 
+# configure dhcp for faster connection
 iwd_dir='/etc/iwd'
 sudo mkdir -p "$iwd_dir"
 sudo cp "$EXE_PATH/asset/iwd/main.conf" "$iwd_dir"
+
+# prioritize wired connection higher wifi
+network_dir='/etc/systemd/network'
+sudo mkdir -p "$network_dir"
+sudo cp "$EXE_PATH/asset/iwd/20-wired.network" "$network_dir"
 
 if ! ping -c 1 -W 1 8.8.8.8 &>/dev/null; then
   read -r -p "Wi-Fi SSID: " ssid
