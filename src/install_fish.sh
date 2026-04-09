@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sudo pacman -S --noconfirm --needed fish starship
+. "$EXE_PATH"/src/utils/lib.sh
+
+sudo pacman -S --noconfirm --needed fish
 
 fish_path="$(which fish)"
 
-if [ "$SHELL" = "$fish_path" ]; then
-  echo 'FISH is already default shell.'
-else
-  chsh -s "$fish_path"
-  echo 'Default shell changed to FISH.'
-fi
+shell_name=$(basename "$(which zsh)")
+
+change_shell "$fish_path"

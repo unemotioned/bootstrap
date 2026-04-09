@@ -21,7 +21,7 @@ stow --restow --adopt applications
 stow --restow bat
 stow --restow btop
 stow --restow fastfetch
-stow --restow fish
+# stow --restow fish
 stow --restow foot
 stow --restow hypr
 stow --restow icons
@@ -30,14 +30,14 @@ stow --restow lazygit
 stow --restow nvim
 stow --restow satty
 stow --restow sessionizer
-stow --restow starship
+# stow --restow starship
 stow --restow tmux
 stow --restow wallpapers
 stow --restow waybar
 stow --restow wlogout
 stow --restow wofi
 stow --restow yazi
-# stow --restow zsh-arch
+stow --restow zsh-arch
 
 rm -rf ~/.cache/bat
 bat cache --build

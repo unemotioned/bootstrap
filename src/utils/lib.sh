@@ -7,29 +7,16 @@ install_pkgs() {
   yay -S --noconfirm --needed "${pkgs[@]}"
 }
 
-ensure_dir() {
-  local dir="$1"
-  if [ ! -d "$dir" ]; then
-    mkdir -p "$dir"
-  fi
-}
+change_shell() {
+  local new_shell="$1"
+  local shell_name="$2"
 
-git_clone_if_missing() {
-  local url="$1"
-  local dir="$2"
-  if [ ! -d "$dir" ]; then
-    git clone "$url" "$dir"
+  if [ "$SHELL" = "$new_shell" ]; then
+    echo "Shell is already $shell_name"
+  else
+    chsh -s "$new_shell"
+    echo "Shell changed to $shell_name"
   fi
-}
 
-run_if_missing() {
-  local cmd="$1"
-  local pkg="$2"
-  if ! command -v "$cmd" &>/dev/null && ! pacman -Qi "$pkg" &>/dev/null; then
-    return 1
-  fi
-  if ! command -v "$cmd" &>/dev/null; then
-    return 1
-  fi
-  return 0
+  export SHELL="$new_shell"
 }

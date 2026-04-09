@@ -19,8 +19,9 @@ NAME='unemotioned'
 . ./src/desktop_portal.sh
 . ./src/install_lang.sh
 . ./src/install_cli_tools.sh
-# . ./src/install_zsh.sh
-. ./src/install_fish.sh
+. ./src/install_zsh.sh
+# . ./src/starship.sh
+# . ./src/install_fish.sh
 . ./src/install_yazi.sh
 . ./src/vim.sh
 . ./src/install_nvim.sh

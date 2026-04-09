@@ -12,15 +12,10 @@ install=(
   zsh-theme-powerlevel10k
 )
 
-install_pkgs install
 
 zsh_path=$(which zsh)
+shell_name=$(basename "$(which zsh)")
 
-if [ "$SHELL" = "$zsh_path" ]; then
-  echo 'ZSH is already default shell.'
-else
-  chsh -s "$zsh_path"
-  echo 'Default shell changed to ZSH.'
-fi
+install_pkgs install
 
-export SHELL="$zsh_path"
+change_shell "$zsh_path" "$shell_name"
