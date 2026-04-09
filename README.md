@@ -109,12 +109,15 @@ Packages that can be installed with `pacman`
 - reflector
 - rustup
 - satty
+- shellcheck
+- shfmt
 - sof-firmware
 - stow
 - tmux
 - ttf-iosevka-nerd
 - ttf-jetbrains-mono-nerd
 - unzip
+- vim
 - waybar
 - wl-clipboard
 - xdg-desktop-portal

@@ -22,6 +22,7 @@ NAME='unemotioned'
 # . ./src/install_zsh.sh
 . ./src/install_fish.sh
 . ./src/install_yazi.sh
+. ./src/vim.sh
 . ./src/install_nvim.sh
 . ./src/install_fonts.sh
 . ./src/install_nautilus.sh
