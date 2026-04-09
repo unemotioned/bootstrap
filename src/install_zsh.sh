@@ -12,7 +12,6 @@ install=(
   zsh-theme-powerlevel10k
 )
 
-
 zsh_path=$(which zsh)
 shell_name=$(basename "$(which zsh)")
 
