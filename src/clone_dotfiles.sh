@@ -16,6 +16,7 @@ rm -rf ~/.config/kitty
 
 mkdir -p ~/.local/share/applications
 mkdir -p ~/Pictures/Screenshots
+mkdir -p ~/.vim
 
 stow --restow --adopt applications
 stow --restow bat
@@ -32,6 +33,7 @@ stow --restow satty
 stow --restow sessionizer
 # stow --restow starship
 stow --restow tmux
+stow --restow --adopt vim
 stow --restow wallpapers
 stow --restow waybar
 stow --restow wlogout
