@@ -5,16 +5,16 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  yazi
-  7zip
-  jq
-  poppler
-  fd
-  ripgrep
-  fzf
-  zoxide
-  resvg
-  imagemagick
+    yazi
+    7zip
+    jq
+    poppler
+    fd
+    ripgrep
+    fzf
+    zoxide
+    resvg
+    imagemagick
 )
 
 install_pkgs install

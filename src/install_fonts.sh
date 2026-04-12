@@ -5,12 +5,12 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  adobe-source-han-sans-kr-fonts
-  adobe-source-han-serif-kr-fonts
-  noto-fonts-cjk
-  noto-fonts-emoji
-  ttf-iosevka-nerd
-  ttf-jetbrains-mono-nerd
+    adobe-source-han-sans-kr-fonts
+    adobe-source-han-serif-kr-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    ttf-iosevka-nerd
+    ttf-jetbrains-mono-nerd
 )
 
 install_pkgs install

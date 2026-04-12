@@ -13,17 +13,17 @@ asset="$EXE_PATH/asset/keyd"
 sudo mkdir -p "$dir"
 
 if [ ! -f "$all" ]; then
-  sudo cp "$asset/all.conf" "$dir"
+    sudo cp "$asset/all.conf" "$dir"
 fi
 
 if [ ! -f "$builtin" ]; then
-  sudo cp "$asset/builtin.conf" "$dir"
+    sudo cp "$asset/builtin.conf" "$dir"
 fi
 
 if [ ! -f "$trackball" ]; then
-  sudo cp "$asset/trackball.conf" "$dir"
+    sudo cp "$asset/trackball.conf" "$dir"
 fi
 
 if ! systemctl is-active --quiet keyd; then
-  sudo systemctl enable keyd
+    sudo systemctl enable keyd
 fi

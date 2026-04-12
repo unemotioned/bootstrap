@@ -5,13 +5,13 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  walker-bin
-  elephant-archlinuxpkgs
-  elephant-bluetooth
-  elephant-calc
-  elephant-clipboard
-  elephant-symbols
-  elephant-websearch
+    walker-bin
+    elephant-archlinuxpkgs
+    elephant-bluetooth
+    elephant-calc
+    elephant-clipboard
+    elephant-symbols
+    elephant-websearch
 )
 
 install_pkgs install

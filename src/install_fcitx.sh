@@ -5,9 +5,9 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  fcitx5-configtool
-  fcitx5-hangul
-  fcitx5-im
+    fcitx5-configtool
+    fcitx5-hangul
+    fcitx5-im
 )
 
 install_pkgs install

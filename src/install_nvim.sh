@@ -5,17 +5,17 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  base-devel
-  lsof
-  neovim
-  nodejs-lts-krypton
-  noto-fonts-emoji
-  npm
-  pnpm
-  tree-sitter-cli
-  unzip
-  wl-clipboard
-  yarn
+    base-devel
+    lsof
+    neovim
+    nodejs-lts-krypton
+    noto-fonts-emoji
+    npm
+    pnpm
+    tree-sitter-cli
+    unzip
+    wl-clipboard
+    yarn
 )
 
 install_pkgs install

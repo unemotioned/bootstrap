@@ -11,14 +11,14 @@ mkdir -p "$repo"
 
 # Clone yay AUR helper source if not already present
 if [ ! -d "$yay" ]; then
-  cd "$repo"
-  git clone https://aur.archlinux.org/yay.git
+    cd "$repo"
+    git clone https://aur.archlinux.org/yay.git
 fi
 
 # Build and install yay if not already installed
 if ! pacman -Qi yay &>/dev/null; then
-  cd "$yay"
-  makepkg -si --noconfirm
+    cd "$yay"
+    makepkg -si --noconfirm
 fi
 
 # sync with db

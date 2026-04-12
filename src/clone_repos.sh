@@ -4,25 +4,25 @@ set -euo pipefail
 sudo pacman -S --noconfirm --needed github-cli
 
 clone_repo() {
-  local dest="$1"
-  local repo="$2"
-  local target="$dest/$repo"
+    local dest="$1"
+    local repo="$2"
+    local target="$dest/$repo"
 
-  mkdir -p "$dest"
+    mkdir -p "$dest"
 
-  if [[ -d "$target/.git" ]]; then
-    echo "$repo already cloned, skipping"
-  else
-    echo "Cloning $repo into $dest..."
-    gh repo clone "$NAME/$repo" "$target"
-  fi
+    if [[ -d "$target/.git" ]]; then
+        echo "$repo already cloned, skipping"
+    else
+        echo "Cloning $repo into $dest..."
+        gh repo clone "$NAME/$repo" "$target"
+    fi
 
-  if git -C "$target" show-ref --verify --quiet refs/heads/dev; then
-    echo "dev branch already exists for $repo, skipping"
-  else
-    echo "Creating dev branch for $repo..."
-    git -C "$target" checkout -b dev
-  fi
+    if git -C "$target" show-ref --verify --quiet refs/heads/dev; then
+        echo "dev branch already exists for $repo, skipping"
+    else
+        echo "Creating dev branch for $repo..."
+        git -C "$target" checkout -b dev
+    fi
 }
 
 clone_repo "$HOME" dotfiles

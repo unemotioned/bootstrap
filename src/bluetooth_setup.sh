@@ -5,9 +5,9 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  bluez
-  bluez-utils
-  bluetui
+    bluez
+    bluez-utils
+    bluetui
 )
 
 install_pkgs install

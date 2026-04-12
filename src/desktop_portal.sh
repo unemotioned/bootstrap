@@ -5,9 +5,9 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  xdg-desktop-portal
-  xdg-desktop-portal-gtk
-  xdg-desktop-portal-hyprland
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
 )
 
 install_pkgs install

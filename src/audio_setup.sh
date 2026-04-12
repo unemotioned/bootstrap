@@ -7,11 +7,11 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  bolt
-  pavucontrol
-  pipewire-audio
-  pipewire-pulse
-  sof-firmware
+    bolt
+    pavucontrol
+    pipewire-audio
+    pipewire-pulse
+    sof-firmware
 )
 
 install_pkgs install

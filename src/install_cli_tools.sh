@@ -5,20 +5,20 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  bat
-  eza
-  fastfetch
-  fd
-  fzf
-  git
-  git-delta
-  github-cli
-  lazygit
-  man-db
-  man-pages
-  tealdeer
-  wikiman
-  zoxide
+    bat
+    eza
+    fastfetch
+    fd
+    fzf
+    git
+    git-delta
+    github-cli
+    lazygit
+    man-db
+    man-pages
+    tealdeer
+    wikiman
+    zoxide
 )
 
 install_pkgs install

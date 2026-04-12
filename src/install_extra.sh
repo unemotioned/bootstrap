@@ -5,13 +5,13 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  btop
-  chromium
-  discord
-  foot
-  gnome-clocks
-  localsend-bin
-  vscodium-bin
+    btop
+    chromium
+    discord
+    foot
+    gnome-clocks
+    localsend-bin
+    vscodium-bin
 )
 
 install_pkgs install

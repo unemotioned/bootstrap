@@ -5,10 +5,10 @@ set -euo pipefail
 
 # shellcheck disable=SC2034
 install=(
-  mpd
-  mpc
-  rmpc
-  cava
+    mpd
+    mpc
+    rmpc
+    cava
 )
 
 install_pkgs install
