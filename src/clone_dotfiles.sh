@@ -13,12 +13,13 @@ cd "$dir"
 
 rm -rf ~/.config/hypr
 rm -rf ~/.config/kitty
+rm -rf ~/.local/share/applications
 
 mkdir -p ~/.local/share/applications
 mkdir -p ~/Pictures/Screenshots
 mkdir -p ~/.vim
 
-stow --restow --adopt applications
+stow --restow applications
 stow --restow bat
 stow --restow btop
 stow --restow fastfetch
@@ -33,13 +34,14 @@ stow --restow satty
 stow --restow sessionizer
 # stow --restow starship
 stow --restow tmux
-stow --restow --adopt vim
 stow --restow wallpapers
 stow --restow waybar
 stow --restow wlogout
 stow --restow wofi
 stow --restow yazi
 stow --restow zsh-arch
+
+stow --restow --adopt vim
 
 rm -rf ~/.cache/bat
 bat cache --build
