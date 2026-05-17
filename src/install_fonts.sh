@@ -9,6 +9,7 @@ install=(
     adobe-source-han-serif-kr-fonts
     noto-fonts-cjk
     noto-fonts-emoji
+    noto-fonts-extra
     ttf-iosevka-nerd
     ttf-jetbrains-mono-nerd
 )
