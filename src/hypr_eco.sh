@@ -9,6 +9,7 @@ install=(
     hyprlock
     hyprpaper
     hyprpicker
+    hyprpolkitagent
     hyprshot
     satty # screenshot annotation tool
     waybar
@@ -17,3 +18,5 @@ install=(
 )
 
 install_pkgs install
+
+systemctl --user enable --now hyprpolkitagent.service
