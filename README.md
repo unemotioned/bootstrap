@@ -99,6 +99,7 @@ Packages that can be installed with `pacman`
 - nodejs-lts-krypton
 - noto-fonts-cjk
 - noto-fonts-emoji
+- noto-fonts-extra
 - npm
 - os-prober
 - pacman-contrib
