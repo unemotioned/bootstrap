@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-sudo pacman -S --noconfirm --needed base-devel
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+master_dir="$(cd "${script_dir}/.." && pwd)"
 
 repo="$HOME/repo"
 yay="$repo/yay"
+
+sudo pacman -S --noconfirm --needed base-devel
 
 # Create repo directory if it doesn't exist
 mkdir -p "$repo"
@@ -24,4 +27,4 @@ fi
 # sync with db
 yay
 
-cd "$EXE_PATH"
+cd "$master_dir"

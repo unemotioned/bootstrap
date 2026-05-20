@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+master_dir="$(cd "${script_dir}/.." && pwd)"
+
+hehe_kitty="$master_dir/asset/chafa/hehe_kitty.png"
+
 if ! command -v chafa &>/dev/null; then
     sudo pacman -S --noconfirm chafa
 fi
-
-hehe_kitty="$EXE_PATH/asset/chafa/hehe_kitty.png"
 
 clear -x
 

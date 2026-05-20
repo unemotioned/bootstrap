@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-. "$EXE_PATH"/src/utils/lib.sh
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$script_dir/utils/lib.sh"
 
 sudo pacman -S --noconfirm --needed fish
 

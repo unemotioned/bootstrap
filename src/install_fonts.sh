@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-. "$EXE_PATH"/src/utils/lib.sh
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$script_dir/utils/lib.sh"
 
 # shellcheck disable=SC2034
 install=(
@@ -20,7 +21,7 @@ dir="$HOME/.local/share/fonts"
 zip="Google_Sans_Flex.zip"
 
 mkdir -p "$dir"
-cp "$EXE_PATH"/asset/fonts/Google_Sans_Flex.zip "$dir"
+cp "$script_dir/asset/fonts/Google_Sans_Flex.zip" "$dir"
 unzip "$dir/$zip" -d "$dir"/GoogleSansFlex
 rm "$dir/$zip"
 

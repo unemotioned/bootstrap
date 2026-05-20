@@ -3,13 +3,16 @@ set -euo pipefail
 
 sudo pacman -S --noconfirm --needed stow github-cli
 
-dir="$HOME/dotfiles"
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+master_dir="$(cd "${script_dir}/.." && pwd)"
 
-if [ ! -d "$dir" ]; then
-    git clone https://github.com/unemotioned/dotfiles.git "$dir"
+dot_dir="$HOME/dotfiles"
+
+if [ ! -d "$dot_dir" ]; then
+    git clone https://github.com/unemotioned/dotfiles.git "$dot_dir"
 fi
 
-cd "$dir"
+cd "$dot_dir"
 
 rm -rf ~/.config/hypr
 rm -rf ~/.config/kitty
@@ -46,4 +49,4 @@ stow --restow --adopt vim
 rm -rf ~/.cache/bat
 bat cache --build
 
-cd "$EXE_PATH"
+cd "$master_dir"

@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-EXE_PATH="$(pwd)"
 NAME='unemotioned'
 
 . ./src/powerprofile.sh
