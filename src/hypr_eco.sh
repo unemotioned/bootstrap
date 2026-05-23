@@ -12,6 +12,7 @@ install=(
     hyprpicker
     hyprpolkitagent
     hyprshot
+    hyprshutdown
     satty # screenshot annotation tool
     waybar
     wl-clipboard

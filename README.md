@@ -86,6 +86,7 @@ Packages that can be installed with `pacman`
 - hyprpicker
 - hyprpolkitagent
 - hyprshot
+- hyprshutdown
 - impala
 - jdk17-openjdk
 - keyd
