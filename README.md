@@ -91,6 +91,7 @@ Packages that can be installed with `pacman`
 - keyd
 - lazygit
 - lsof
+- ly
 - man-db
 - man-pages
 - nautilus

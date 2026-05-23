@@ -7,6 +7,7 @@ NAME='unemotioned'
 . ./src/pacman_config.sh
 . ./src/grub_config.sh
 . ./src/sort_mirror_list.sh
+. ./src/ly.sh
 . ./src/install_yay.sh
 . ./src/paccache.sh
 . ./src/install_brillo.sh
