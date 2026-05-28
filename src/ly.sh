@@ -15,3 +15,5 @@ if pacman -Qi "$prev_mgr" &>/dev/null; then
     sudo systemctl disable "$prev_mgr"
     sudo systemctl disable getty@tty"$prev_mgr_tty".service
 fi
+
+sudo pacman -Rns "$prev_mgr"
