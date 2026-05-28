@@ -12,6 +12,7 @@ install=(
     foot
     gnome-clocks
     localsend-bin
+    presenterm
     vscodium-bin
 )
 
