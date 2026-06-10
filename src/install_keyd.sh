@@ -5,8 +5,7 @@ sudo pacman -S --noconfirm --needed keyd
 
 keyd_dir='/etc/keyd'
 all="$keyd_dir/all.conf"
-builtin="$keyd_dir/builtin.conf"
-trackball="$keyd_dir/trackball.conf"
+ball="$keyd_dir/ball.conf"
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 master_dir="$(cd "${script_dir}/.." && pwd)"
@@ -18,12 +17,8 @@ if [ ! -f "$all" ]; then
     sudo cp "$asset_dir/keyd/all.conf" "$keyd_dir"
 fi
 
-if [ ! -f "$builtin" ]; then
-    sudo cp "$asset_dir/keyd/builtin.conf" "$keyd_dir"
-fi
-
-if [ ! -f "$trackball" ]; then
-    sudo cp "$asset_dir/keyd/trackball.conf" "$keyd_dir"
+if [ ! -f "$ball" ]; then
+    sudo cp "$asset_dir/keyd/ball.conf" "$keyd_dir"
 fi
 
 if ! systemctl is-active --quiet keyd; then
