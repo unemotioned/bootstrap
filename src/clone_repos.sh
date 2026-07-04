@@ -32,10 +32,10 @@ clone_repo "$dev" dsa
 clone_repo "$dev" english-test
 clone_repo "$dev" guessing-game.rs
 clone_repo "$dev" student-grader
+clone_repo "$dev" bootstrap
 
-personal="$HOME/personal"
-clone_repo "$personal" bootstrap
-clone_repo "$personal" tistory
+playground="$HOME/playground"
+clone_repo "$playground" tistory
 
 repo="$HOME/repo"
 clone_repo "$repo" tmux-tokyo-night

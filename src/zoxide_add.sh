@@ -8,12 +8,10 @@ mkdir -p ~/playground
 
 dirs=(
     .config
-    .config/fish
     .config/foot
     .config/hypr
     .config/kitty
     .config/nvim
-    .config/starship
     .config/waybar
     .config/fastfetch
     .local
@@ -24,10 +22,7 @@ dirs=(
     Pictures/Screenshots
     Pictures/Wallpapers
     dotfiles
-    personal
-    personal/bootstrap
-    personal/tistory
-    playground
+    playground/tistory
     repo
     repo/tmux-tokyo-night
     repo/tokyonight.nvim
