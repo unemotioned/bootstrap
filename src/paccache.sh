@@ -4,5 +4,5 @@ set -euo pipefail
 sudo pacman -S --noconfirm --needed pacman-contrib
 
 # every week
-# keep lateset 3
+# keep latest 3
 sudo systemctl enable paccache.timer
