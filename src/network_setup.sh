@@ -3,7 +3,7 @@ set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 master_dir="$(cd "${script_dir}/.." && pwd)"
-asset_dir="$master_dir/asset"
+asset_dir="$master_dir/assets"
 
 sudo pacman -S --noconfirm --needed impala iwd dhcpcd
 

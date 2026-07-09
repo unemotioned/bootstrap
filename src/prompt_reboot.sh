@@ -4,7 +4,7 @@ set -euo pipefail
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 master_dir="$(cd "${script_dir}/.." && pwd)"
 
-hehe_kitty="$master_dir/asset/chafa/hehe_kitty.png"
+hehe_kitty="$master_dir/assets/chafa/hehe_kitty.png"
 
 if ! command -v chafa &>/dev/null; then
     sudo pacman -S --noconfirm chafa

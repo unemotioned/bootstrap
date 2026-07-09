@@ -21,7 +21,7 @@ dir="$HOME/.local/share/fonts"
 zip="Google_Sans_Flex.zip"
 
 mkdir -p "$dir"
-cp "$script_dir/asset/fonts/Google_Sans_Flex.zip" "$dir"
+cp "$script_dir/assets/fonts/Google_Sans_Flex.zip" "$dir"
 unzip "$dir/$zip" -d "$dir"/GoogleSansFlex
 rm "$dir/$zip"
 

@@ -20,6 +20,6 @@ mpd_dir="$HOME"/.config/mpd
 
 mkdir -p "$mpd_dir" "$HOME"/Music/Playlists "$HOME"/.local/share/mpd/database
 
-cp "$master_dir"/asset/mpd/mpd.conf "$mpd_dir"
+cp "$master_dir"/assets/mpd/mpd.conf "$mpd_dir"
 
 systemctl --user enable mpd.socket
