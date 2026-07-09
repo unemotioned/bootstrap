@@ -89,12 +89,15 @@ Packages that can be installed with `pacman`
 - hyprshutdown
 - impala
 - jdk17-openjdk
+- jdk21-openjdk
+- jdk25-openjdk
 - keyd
 - lazygit
 - lsof
 - ly
 - man-db
 - man-pages
+- maven
 - nautilus
 - neovim
 - node

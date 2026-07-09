@@ -17,7 +17,9 @@ NAME='unemotioned'
 . ./src/hypr_eco.sh
 . ./src/walker.sh
 . ./src/desktop_portal.sh
-. ./src/install_lang.sh
+. ./src/install_go.sh
+. ./src/install_java.sh
+. ./src/install_rust.sh
 . ./src/install_cli_tools.sh
 . ./src/install_zsh.sh
 # . ./src/starship.sh
