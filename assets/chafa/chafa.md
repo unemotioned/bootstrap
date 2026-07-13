@@ -1,8 +1,10 @@
-# chafa
+# Chafa
 
-Terminal image rendering tool
+Terminal image rendering tool.
 
 [GitHub - hpjansson](https://github.com/hpjansson/chafa)
+
+---
 
 ## Install
 
@@ -12,13 +14,17 @@ if ! pacman -Qi chafa &>/dev/null; then
 fi
 ```
 
+---
+
 ## Get Relative PATH
 
-Get path where the script is located
+Get path where the script is located.
 
 ```sh
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ```
+
+---
 
 ## Usage
 

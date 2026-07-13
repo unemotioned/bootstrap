@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file no-inline-html -->
+
 # Bootstrap
 
 Scripts to install packages and stow my dotfiles.
@@ -22,27 +24,22 @@ My workflow: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
 ## Prerequisite
 
-- `Arch Linux`: So you can say "I use Arch by the way."
-
-- `Hyprland`: Tiling window manager for wayland
-
-- `git`: For cloning this repository
-
-```sh
-sudo pacman -S git
-```
+- `Arch Linux`: So you can say _"I use Arch by the way."_
+- `Hyprland`: Tiling window manager for wayland.
+- `git`: For cloning this repository.
 
 ---
 
 ## Usage
 
-1. clone this repository
-2. move in
-3. execute `master.sh` script
+1. Clone this repository.
+2. Move in.
+3. Execute `master.sh` script.
 
 ```sh
-git clone https://github.com/unemotioned/bootstrap.git ~/personal/bootstrap
-cd ~/personal/bootstrap/
+mkdir -p ~/dev
+git clone https://github.com/unemotioned/bootstrap.git ~/dev/bootstrap
+cd ~/dev/bootstrap/
 ./master.sh
 ```
 
@@ -55,7 +52,10 @@ cd ~/personal/bootstrap/
 
 ### Pacman
 
-Packages that can be installed with `pacman`
+Packages that can be installed with `pacman`.
+
+<details>
+  <summary><b>Click to expand</b></summary>
 
 - base-devel
 - bat
@@ -138,9 +138,13 @@ Packages that can be installed with `pacman`
 - zsh-autosuggestions
 - zsh-history-substring-search
 
+[Back to Pacman Header](#pacman)
+
+</details>
+
 ### AUR
 
-Packages that can only be installed from `AUR` repository
+Packages that can only be installed from `AUR` repository.
 
 - adobe-source-han-sans-kr-fonts
 - adobe-source-han-serif-kr-fonts
