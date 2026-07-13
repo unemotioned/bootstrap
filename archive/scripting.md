@@ -5,7 +5,7 @@
 ## Table of Contents
 
 - [Exit](#exit)
-- [Pipefaile](#pipefaile)
+- [Pipefail](#pipefail)
 - [Sed](#sed)
 - [Redirect](#redirect)
 - [ETC](#etc)
@@ -20,14 +20,14 @@
 | ----- | ----------------------------- |
 | `0`   | Success                       |
 | `1`   | General error                 |
-| `2`   | Misues of shell builtins      |
+| `2`   | misuse of shell builtins      |
 | `126` | Cmd found but not executable  |
 | `127` | Cmd not found                 |
 | `130` | Script terminated by `Ctrl+C` |
 
 ---
 
-## Pipefaile
+## Pipefail
 
 Safer script execution.
 
