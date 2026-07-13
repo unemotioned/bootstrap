@@ -9,6 +9,7 @@ prev_mgr_tty=1
 sudo pacman -S --noconfirm --needed ly
 
 sudo systemctl enable ly@tty"$tty".service
+# disable getty from tty2 which is where ly will run
 sudo systemctl disable getty@tty"$tty".service
 
 if pacman -Qi "$prev_mgr" &>/dev/null; then

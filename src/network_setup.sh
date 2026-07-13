@@ -20,7 +20,7 @@ iwd_dir='/etc/iwd'
 sudo mkdir -p "$iwd_dir"
 sudo cp "$asset_dir/iwd/main.conf" "$iwd_dir"
 
-# prioritize wired connection higher wifi
+# prioritize wired connection over wifi
 network_dir='/etc/systemd/network'
 sudo mkdir -p "$network_dir"
 sudo cp "$asset_dir/iwd/20-wired.network" "$network_dir"

@@ -12,6 +12,7 @@ if pacman -Qi brillo &>/dev/null; then
     exit 0
 fi
 
+# install dependency
 sudo pacman -S --noconfirm --needed go-md2man
 
 mkdir -p "$repo"
