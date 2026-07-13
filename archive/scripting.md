@@ -1,25 +1,37 @@
 # Scripting
 
-[bash cheat sheet](https://devhints.io/bash)
+[BASH cheat sheet](https://devhints.io/bash)
 
-- `command -v <pkg>`: look up package in $PATH and return it if found
+## Table of Contents
 
-- `pacman -Qi <pkg>`: check if the package is installed
+- [Exit](#exit)
+- [Pipefaile](#pipefaile)
+- [Sed](#sed)
+- [Redirect](#redirect)
+- [ETC](#etc)
 
-- `&>/dev/null`: redirect stdout and stderr to /dev/null (print no output)
+---
 
-- `exit 0 ~ 255`: any none-zero value signals an error
+## Exit
 
-  | Code  | Meaning                       |
-  | ----- | ----------------------------- |
-  | `0`   | Success                       |
-  | `1`   | General error                 |
-  | `2`   | Misues of shell builtins      |
-  | `126` | Cmd found but not executable  |
-  | `127` | Cmd not found                 |
-  | `130` | Script terminated by `Ctrl+C` |
+`0 ~ 255`: Any none-zero value signals an error.
 
-- `set -euo pipefail`: safer script execution
+| Code  | Meaning                       |
+| ----- | ----------------------------- |
+| `0`   | Success                       |
+| `1`   | General error                 |
+| `2`   | Misues of shell builtins      |
+| `126` | Cmd found but not executable  |
+| `127` | Cmd not found                 |
+| `130` | Script terminated by `Ctrl+C` |
+
+---
+
+## Pipefaile
+
+Safer script execution.
+
+- `set -euo pipefail`:
 
   | Flag       | Meaning                                     |
   | ---------- | ------------------------------------------- |
@@ -28,11 +40,39 @@
   | `-o`       | Set a named option                          |
   | `pipefail` | Pipe fails if any command in the pipe fails |
 
-- `sed`: for parsing and transforming text
+---
 
-  | Uses                  | syntax                      |
-  | --------------------- | --------------------------- |
-  | Substitution          | sed 's/old/new' file.txt    |
-  | In-place substitution | sed -i 's/old/new' file.txt |
-  | Delete line           | sed '/pattern/d' file.txt   |
-  | Print specific lines  | sed -n 's/old/new' file.txt |
+## [Sed](https://man7.org/linux/man-pages/man1/sed.1.html)
+
+Parsing and transforming text.
+
+| Uses                  | syntax                      |
+| --------------------- | --------------------------- |
+| Substitution          | sed 's/old/new' file.txt    |
+| In-place substitution | sed -i 's/old/new' file.txt |
+| Delete line           | sed '/pattern/d' file.txt   |
+| Print specific lines  | sed -n 's/old/new' file.txt |
+
+---
+
+## Redirect
+
+Redirects standard output to special file `/dev/null`.
+
+```sh
+>/dev/null
+```
+
+- `>`: **stdout** to a file and overwrite
+- `>>`: **stdout** (append)
+- `2>`: **stderr**
+- `&>`: Both **stdout** and **stderr**
+
+- `/dev/null`: Throws away everything written to it
+
+---
+
+## ETC
+
+- `command -v <pkg>`: look up package in $PATH and return it if found
+- `pacman -Qi <pkg>`: check if the package is installed
