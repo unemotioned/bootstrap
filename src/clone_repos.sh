@@ -33,6 +33,7 @@ clone_repo "$dev" english-test
 clone_repo "$dev" guessing-game.rs
 clone_repo "$dev" student-grader
 clone_repo "$dev" bootstrap
+clone_repo "$dev" my-website
 
 playground="$HOME/playground"
 clone_repo "$playground" tistory
