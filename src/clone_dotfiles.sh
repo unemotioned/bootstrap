@@ -22,12 +22,12 @@ mkdir -p ~/.local/share/applications
 mkdir -p ~/Pictures/Screenshots
 mkdir -p ~/.vim
 
-stow --restow applications
 stow --restow bat
 stow --restow btop
 stow --restow fastfetch
 # stow --restow fish
 stow --restow foot
+stow --restow git
 stow --restow hypr
 stow --restow icons
 stow --restow kitty
@@ -44,6 +44,7 @@ stow --restow wofi
 stow --restow yazi
 stow --restow zsh-arch
 
+stow --restow --adopt applications
 stow --restow --adopt vim
 
 rm -rf ~/.cache/bat
