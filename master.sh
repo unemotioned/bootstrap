@@ -38,7 +38,6 @@ NAME='unemotioned'
 . ./src/zoxide_add.sh
 . ./src/install_opencode.sh
 . ./src/install_tmux.sh
-. ./src/install_db.sh
 . ./src/fprint_setup.sh
 . ./src/network_setup.sh
 . ./src/bluetooth_setup.sh

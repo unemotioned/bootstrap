@@ -147,8 +147,6 @@ Packages that can only be installed from `AUR` repository
 - catppuccin-gtk-theme-mocha
 - fish
 - localsend-bin
-- mongodb-bin
-- mongosh-bin
 - oh-my-zsh-git
 - opencode-bin
 - starship
