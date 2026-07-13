@@ -6,7 +6,7 @@ NAME='unemotioned'
 . ./src/powerprofile.sh
 . ./src/pacman_config.sh
 . ./src/grub_config.sh
-. ./src/sort_mirror_list.sh
+. ./src/sort_mirrorlist.sh
 . ./src/ly.sh
 . ./src/install_yay.sh
 . ./src/paccache.sh
