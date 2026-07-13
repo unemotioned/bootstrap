@@ -2,9 +2,9 @@
 
 # Bootstrap
 
-Scripts to install packages and stow my dotfiles.
+BASH scripts for setting up [Arch Linux](https://archlinux.org/) and [Hyprland](https://hypr.land/) automatically for my taste.
 
-My workflow: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
+**My workflow**: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
 ## Reference
 
@@ -12,29 +12,19 @@ My workflow: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
 ## Table of Contents
 
-- [Prerequisite](#prerequisite)
-- [Usage](#usage)
+- [Run](#run)
 - [Packages](#packages)
   - [Pacman](#pacman)
   - [AUR](#aur)
   - [Manual](#manual)
+
+## What I Learned
+
 - [Scripting](./archive/scripting.md)
 
 ---
 
-## Prerequisite
-
-- `Arch Linux`: So you can say _"I use Arch by the way."_
-- `Hyprland`: Tiling window manager for wayland.
-- `git`: For cloning this repository.
-
----
-
-## Usage
-
-1. Clone this repository.
-2. Move in.
-3. Execute `master.sh` script.
+## Run
 
 ```sh
 mkdir -p ~/dev
