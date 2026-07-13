@@ -7,7 +7,6 @@ source "$script_dir/utils/lib.sh"
 sudo pacman -S --noconfirm --needed fish
 
 fish_path="$(which fish)"
+shell_name=$(basename "$(which fish)")
 
-shell_name=$(basename "$(which zsh)")
-
-change_shell "$fish_path"
+change_shell "$fish_path" "$shell_name"
