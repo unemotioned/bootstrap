@@ -14,11 +14,17 @@ grub_options=(
 )
 
 for opt in "${grub_options[@]}"; do
+    # `%%`: removes the longest matching suffix from the end
+    # `=*`: matches everything from the first `=` to the end
     key="${opt%%=*}"
-    if grep -qE "^#?${key}=" "$grub"; then
-        sudo sed -Ei "s/^#?${key}=.*/${opt}/" "$grub"
+
+    if grep -qE "^#?${key}=" "${grub}"; then
+        # Find the line containing the key, commented or with different value
+        #  and replace it with the predefined value
+        sudo sed -iE "s/^#?${key}=.*/${opt}/" "${grub}"
     else
-        echo "$opt" | sudo tee -a "$grub" >/dev/null
+        # `tee`: reads from standard input and appends to a file that requires root privileges
+        echo "$opt" | sudo tee -a "${grub}" >/dev/null
     fi
 done
 
