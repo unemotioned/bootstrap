@@ -1,8 +1,7 @@
-<!-- markdownlint-disable-file no-inline-html -->
-
 # Bootstrap
 
-BASH scripts for setting up [Arch Linux](https://archlinux.org/) and [Hyprland](https://hypr.land/) automatically for my taste.
+BASH scripts for setting up [Arch Linux](https://archlinux.org/) and
+[Hyprland](https://hypr.land/) automatically for my taste.
 
 **My workflow**: `Arch` + `Hyprland` + `Kitty` + `Tmux` + `Neovim`
 
