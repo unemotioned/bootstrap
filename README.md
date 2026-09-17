@@ -82,6 +82,7 @@ Packages that can be installed with `pacman`.
 - jdk25-openjdk
 - keyd
 - lazygit
+- linux-headers
 - lsof
 - ly
 - man-db
@@ -115,6 +116,9 @@ Packages that can be installed with `pacman`.
 - ttf-jetbrains-mono-nerd
 - unzip
 - vim
+- vlc
+- vlc-cli
+- vlc-plugin-ffmpeg
 - waybar
 - wl-clipboard
 - xdg-desktop-portal

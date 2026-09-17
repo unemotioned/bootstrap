@@ -30,6 +30,8 @@ NAME='unemotioned'
 . ./src/install_fonts.sh
 . ./src/install_nautilus.sh
 . ./src/install_extra.sh
+. ./src/install_vlc.sh
+. ./src/install_linux_headers.sh
 . ./src/git_config.sh
 . ./src/gh_setup.sh
 . ./src/clone_dotfiles.sh
