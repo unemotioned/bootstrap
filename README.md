@@ -116,9 +116,7 @@ Packages that can be installed with `pacman`.
 - ttf-jetbrains-mono-nerd
 - unzip
 - vim
-- vlc
-- vlc-cli
-- vlc-plugin-ffmpeg
+- mpv
 - waybar
 - wl-clipboard
 - xdg-desktop-portal
