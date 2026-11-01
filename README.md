@@ -88,6 +88,7 @@ Packages that can be installed with `pacman`.
 - man-db
 - man-pages
 - maven
+- mpv
 - nautilus
 - neovim
 - node
@@ -96,6 +97,7 @@ Packages that can be installed with `pacman`.
 - noto-fonts-emoji
 - noto-fonts-extra
 - npm
+- opencode
 - os-prober
 - pacman-contrib
 - pavucontrol
@@ -116,7 +118,6 @@ Packages that can be installed with `pacman`.
 - ttf-jetbrains-mono-nerd
 - unzip
 - vim
-- mpv
 - waybar
 - wl-clipboard
 - xdg-desktop-portal
@@ -143,7 +144,6 @@ Packages that can only be installed from `AUR` repository.
 - fish
 - localsend-bin
 - oh-my-zsh-git
-- opencode-bin
 - starship
 - vscodium-bin
 - wlogout
